@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Image from "./../../assets/pic01.jpg";
+import Image from "./../../assets/pic02.jpg";
 
 export default () => (
   <Section>
@@ -32,7 +32,7 @@ const Section = styled.section`
   display grid;
   grid-template-columns: 2em 6fr 2em;
   grid-template-areas: ". a .";
-  background-color: #fafafa;
+  background-color: #3498db;
   padding-bottom: 2.5em
 `;
 
@@ -52,6 +52,7 @@ const Img = styled.img`
 `;
 
 const Title = styled.p`
+  color: #f1f0f1;
   font-weight: 900;
   font-size: 1.2em;
 `;
@@ -61,14 +62,14 @@ const Body = styled.p`
   font-size: 0.8rem;
   line-height: 1.5em;
   padding: 2.2em 0;
-  color: #a5a5a5;
+  color: #aed6f1;
 `;
 
 const Button = styled.button`
 	width: 25%
 	padding: 0.7em;
-	background-color: #3498db;
-	color: white;
+	background-color: #fff;
+	color: #3498db;
 	border-radius: 3px;
 	font-weight:900;
 	font-size: 0.8rem;
