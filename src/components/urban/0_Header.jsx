@@ -39,6 +39,9 @@ const Content = styled.div`
 const Title = styled.p`
   font-weight: 900;
   font-size: 1.4rem;
+  @media screen and (min-width: 576px) {
+    font-size: 2.7rem;
+  }
 `;
 
 const Body = styled.p`
@@ -46,6 +49,9 @@ const Body = styled.p`
   font-size: 0.9rem;
   line-height: 1.5em;
   padding: 1.2em 0 1.5em 0;
+  @media screen and (min-width: 576px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Button = styled.button`
@@ -61,4 +67,7 @@ const Button = styled.button`
 		color: #3498db;
 		border-color: #003a58;
 	}
+	@media screen and (min-width: 576px) {
+    width: 25%;
+  }
 `;
