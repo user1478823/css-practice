@@ -1,45 +1,62 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 
 import Image01 from "./../../assets/pic03.jpg";
 import Image02 from "./../../assets/pic04.jpg";
 import Image03 from "./../../assets/pic05.jpg";
 
-export default () => (
-  <Section>
-    <TitleDiv>
-      <Title>Aliquam ipsum purus dolor</Title>
-      <TitleBody>
-        Cras sagittis turpis sit amet est tempus, sit amet consectetur purus
-        tincidunt.
-      </TitleBody>
-    </TitleDiv>
-    <div>
-      <Img src={Image01} alt="" />
-      <Body>
-        Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam
-        consequat, nunc quis sollicitudin aliquet.
-      </Body>
-      <Button>Learn More</Button>
-    </div>
-    <div>
-      <Img src={Image02} alt="" />
-      <Body>
-        Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam
-        consequat, nunc quis sollicitudin aliquet.
-      </Body>
-      <Button>Learn More</Button>
-    </div>
-    <div>
-      <Img src={Image03} alt="" />
-      <Body>
-        Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam
-        consequat, nunc quis sollicitudin aliquet.
-      </Body>
-      <Button>Learn More</Button>
-    </div>
-  </Section>
-);
+export default class SectionThree extends Component {
+  state = {};
+  render() {
+    return (
+      <Section>
+        <TitleDiv>
+          <Title>Aliquam ipsum purus dolor</Title>
+          <p style={{ color: "#a5a5a5" }}>
+            Cras sagittis turpis sit amet est tempus, sit amet consectetur purus
+            tincidunt.
+          </p>
+        </TitleDiv>
+        <div>
+          <this.props.styles.img
+            src={Image01}
+            alt=""
+            style={{ marginTop: "1em" }}
+          />
+          <this.props.styles.body>
+            Sed congue elit malesuada nibh, a varius odio vehicula aliquet.
+            Aliquam consequat, nunc quis sollicitudin aliquet.
+          </this.props.styles.body>
+          <this.props.styles.btn>Learn More</this.props.styles.btn>
+        </div>
+        <div>
+          <this.props.styles.img
+            src={Image02}
+            alt=""
+            style={{ marginTop: "1em" }}
+          />
+          <this.props.styles.body>
+            Sed congue elit malesuada nibh, a varius odio vehicula aliquet.
+            Aliquam consequat, nunc quis sollicitudin aliquet.
+          </this.props.styles.body>
+          <this.props.styles.btn>Learn More</this.props.styles.btn>
+        </div>
+        <div>
+          <this.props.styles.img
+            src={Image03}
+            alt=""
+            style={{ marginTop: "1em" }}
+          />
+          <this.props.styles.body>
+            Sed congue elit malesuada nibh, a varius odio vehicula aliquet.
+            Aliquam consequat, nunc quis sollicitudin aliquet.
+          </this.props.styles.body>
+          <this.props.styles.btn>Learn More</this.props.styles.btn>
+        </div>
+      </Section>
+    );
+  }
+}
 
 const Section = styled.section`
   text-align: center;
@@ -64,46 +81,4 @@ const Title = styled.p`
   font-weight: 900;
   font-size: 1.6em;
   padding-bottom: 0.8em;
-`;
-
-const TitleBody = styled.p`
-  color: #a5a5a5;
-`;
-
-const Img = styled.img`
-  margin-top: 2em;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  width: 50%;
-  @media screen and (min-width: 576px) {
-    margin-top: 0;
-    height: auto;
-    width: 80%;
-  }
-`;
-
-const Body = styled.p`
-  font-weight: 300;
-  font-size: 0.8rem;
-  line-height: 1.5em;
-  padding: 1.5em 0;
-  color: #a5a5a5;
-`;
-
-const Button = styled.button`
-  width: 100px;
-  padding: 0.7em;
-  background-color: #3498db;
-  color: white;
-  border-radius: 3px;
-  font-weight: 900;
-  font-size: 0.8rem;
-  &:hover {
-    background-color: #003a58;
-    color: #3498db;
-    border-color: #003a58;
-  }
 `;
