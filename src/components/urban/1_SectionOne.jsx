@@ -5,8 +5,8 @@ import Image from "./../../assets/pic01.jpg";
 
 export default () => (
   <Section>
+    <Img src={Image} alt="" />
     <Content>
-      <Img src={Image} alt="" />
       <Title>Maecenas a gravida quam</Title>
       <Body>
         Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada
@@ -31,24 +31,36 @@ export default () => (
 const Section = styled.section`
   display grid;
   grid-template-columns: 2em 6fr 2em;
-  grid-template-areas: ". a .";
+  grid-template-areas: ". a ." 
+                       ". b .";
+  grid-gap: 2em;
   background-color: #fafafa;
-  padding-bottom: 2.5em
+  padding: 2.5em 0;
+  @media screen and (min-width: 576px) {
+    grid-template-columns: 0.5em 3fr 6fr 0.5em;
+    grid-template-areas: ". a b .";
+    grid-gap: 1em;
+  }
 `;
 
 const Content = styled.div`
-  grid-area: a;
+  grid-area: b;
 `;
 
 const Img = styled.img`
-  padding: 3em 0;
-  height: 250px;
+  grid-area: a;
+  height: 100%;
+  width: 100%
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 60%;
-  width: 60%;
+  height: 250px;
+  width: 250px;
+  @media screen and (min-width: 576px) {
+    height: 200px;
+    width: 200px;
+  }
 `;
 
 const Title = styled.p`
@@ -65,16 +77,16 @@ const Body = styled.p`
 `;
 
 const Button = styled.button`
-	width: 25%
-	padding: 0.7em;
-	background-color: #3498db;
-	color: white;
-	border-radius: 3px;
-	font-weight:900;
-	font-size: 0.8rem;
-	&:hover {
-		background-color: #003a58;
-		color: #3498db;
-		border-color: #003a58;
-	}
+  width: 100px;
+  padding: 0.7em;
+  background-color: #3498db;
+  color: white;
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 0.8rem;
+  &:hover {
+    background-color: #003a58;
+    color: #3498db;
+    border-color: #003a58;
+  }
 `;
