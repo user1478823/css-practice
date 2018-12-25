@@ -7,6 +7,9 @@ import Image03 from "./../../assets/pic05.jpg";
 
 export default class SectionThree extends Component {
   state = {};
+
+  images = [Image01, Image02, Image03];
+
   render() {
     return (
       <Section>
@@ -17,42 +20,22 @@ export default class SectionThree extends Component {
             tincidunt.
           </p>
         </TitleDiv>
-        <div>
-          <this.props.styles.img
-            src={Image01}
-            alt=""
-            style={{ marginTop: "1em" }}
-          />
-          <this.props.styles.body>
-            Sed congue elit malesuada nibh, a varius odio vehicula aliquet.
-            Aliquam consequat, nunc quis sollicitudin aliquet.
-          </this.props.styles.body>
-          <this.props.styles.btn>Learn More</this.props.styles.btn>
-        </div>
-        <div>
-          <this.props.styles.img
-            src={Image02}
-            alt=""
-            style={{ marginTop: "1em" }}
-          />
-          <this.props.styles.body>
-            Sed congue elit malesuada nibh, a varius odio vehicula aliquet.
-            Aliquam consequat, nunc quis sollicitudin aliquet.
-          </this.props.styles.body>
-          <this.props.styles.btn>Learn More</this.props.styles.btn>
-        </div>
-        <div>
-          <this.props.styles.img
-            src={Image03}
-            alt=""
-            style={{ marginTop: "1em" }}
-          />
-          <this.props.styles.body>
-            Sed congue elit malesuada nibh, a varius odio vehicula aliquet.
-            Aliquam consequat, nunc quis sollicitudin aliquet.
-          </this.props.styles.body>
-          <this.props.styles.btn>Learn More</this.props.styles.btn>
-        </div>
+        {this.images.map(image => {
+          return (
+            <div>
+              <this.props.styles.img
+                src={image}
+                alt=""
+                style={{ marginTop: "1em" }}
+              />
+              <this.props.styles.body>
+                Sed congue elit malesuada nibh, a varius odio vehicula aliquet.
+                Aliquam consequat, nunc quis sollicitudin aliquet.
+              </this.props.styles.body>
+              <this.props.styles.btn>Learn More</this.props.styles.btn>
+            </div>
+          );
+        })}
       </Section>
     );
   }
@@ -72,9 +55,11 @@ const Section = styled.section`
 
 const TitleDiv = styled.div`
   padding-bottom: 1em;
-  grid-area: a;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  @media screen and (min-width: 576px) {
+    grid-area: a;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 `;
 
 const Title = styled.p`
