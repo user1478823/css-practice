@@ -7,48 +7,57 @@ import Image03 from "./../../assets/pic05.jpg";
 
 export default () => (
   <Section>
-    <Content>
-      <TitleDiv>
-        <Title>Aliquam ipsum purus dolor</Title>
-        <TitleBody>
-          Cras sagittis turpis sit amet est tempus, sit amet consectetur purus
-          tincidunt.
-        </TitleBody>
-      </TitleDiv>
+    <TitleDiv>
+      <Title>Aliquam ipsum purus dolor</Title>
+      <TitleBody>
+        Cras sagittis turpis sit amet est tempus, sit amet consectetur purus
+        tincidunt.
+      </TitleBody>
+    </TitleDiv>
+    <div>
       <Img src={Image01} alt="" />
       <Body>
         Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam
         consequat, nunc quis sollicitudin aliquet.
       </Body>
       <Button>Learn More</Button>
+    </div>
+    <div>
       <Img src={Image02} alt="" />
       <Body>
         Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam
         consequat, nunc quis sollicitudin aliquet.
       </Body>
       <Button>Learn More</Button>
+    </div>
+    <div>
       <Img src={Image03} alt="" />
       <Body>
         Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam
         consequat, nunc quis sollicitudin aliquet.
       </Body>
       <Button>Learn More</Button>
-    </Content>
+    </div>
   </Section>
 );
 
 const Section = styled.section`
-  text-align: center;  
-  display grid;
-  grid-template-columns: 2em 6fr 2em;
-  grid-template-areas: ". a .";
+  text-align: center;
   background-color: #fafafa;
-  padding-bottom: 2.5em
+  padding: 2.5em;
+  @media screen and (min-width: 576px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: " a ";
+    grid-gap: 1em;
+  }
 `;
 
 const TitleDiv = styled.div`
-  padding: 2.5em 0 1em 0;
+  padding-bottom: 1em;
   grid-area: a;
+  grid-column-start: 1;
+  grid-column-end: 4;
 `;
 
 const Title = styled.p`
@@ -61,18 +70,19 @@ const TitleBody = styled.p`
   color: #a5a5a5;
 `;
 
-const Content = styled.div`
-  grid-area: a;
-`;
-
 const Img = styled.img`
   margin-top: 2em;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 60%;
-  width: 60%;
+  height: auto;
+  width: 50%;
+  @media screen and (min-width: 576px) {
+    margin-top: 0;
+    height: auto;
+    width: 80%;
+  }
 `;
 
 const Body = styled.p`
@@ -84,16 +94,16 @@ const Body = styled.p`
 `;
 
 const Button = styled.button`
-	width: 25%
-	padding: 0.7em;
-	background-color: #3498db;
-	color: white;
-	border-radius: 3px;
-	font-weight:900;
-	font-size: 0.8rem;
-	&:hover {
-		background-color: #003a58;
-		color: #3498db;
-		border-color: #003a58;
-	}
+  width: 100px;
+  padding: 0.7em;
+  background-color: #3498db;
+  color: white;
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 0.8rem;
+  &:hover {
+    background-color: #003a58;
+    color: #3498db;
+    border-color: #003a58;
+  }
 `;

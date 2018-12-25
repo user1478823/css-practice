@@ -29,17 +29,25 @@ export default () => (
 );
 
 const Section = styled.section`
-  display grid;
-  grid-template-columns: 2em 6fr 2em;
-  grid-template-areas: ". a ." 
-                       ". b .";
-  grid-gap: 2em;
   background-color: #fafafa;
-  padding: 2.5em 0;
+  padding: 2.5em;
   @media screen and (min-width: 576px) {
-    grid-template-columns: 0.5em 3fr 6fr 0.5em;
-    grid-template-areas: ". a b .";
-    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: 5fr 6fr 1em;
+    grid-template-areas: "a b .";
+  }
+`;
+
+const Img = styled.img`
+  grid-area: a;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 50%;
+  @media screen and (min-width: 576px) {
+    width: 80%;
   }
 `;
 
@@ -47,25 +55,13 @@ const Content = styled.div`
   grid-area: b;
 `;
 
-const Img = styled.img`
-  grid-area: a;
-  height: 100%;
-  width: 100%
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 250px;
-  width: 250px;
-  @media screen and (min-width: 576px) {
-    height: 200px;
-    width: 200px;
-  }
-`;
-
 const Title = styled.p`
   font-weight: 900;
   font-size: 1.2em;
+  padding-top: 1.5em;
+  @media screen and (min-width: 576px) {
+    padding-top: 0;
+  }
 `;
 
 const Body = styled.p`
