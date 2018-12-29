@@ -1,22 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-import Image from "./../../assets/banner.jpg";
+import Image from "./../../assets/urban/banner.jpg";
 
 export default () => (
-  <Background>
-    <Content>
+  <Header>
+    <div>
       <Title>This is Urban</Title>
       <Body>
         Aliquam libero augue varius non odio nec faucibus conguefelis quisque a
         diam rutrum tempus massa accumsan faucibus purus.
       </Body>
       <Button>Learn More</Button>
-    </Content>
-  </Background>
+    </div>
+  </Header>
 );
 
-const Background = styled.div`
+const Header = styled.header`
   text-align: center;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -24,15 +24,9 @@ const Background = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
-  grid-template-columns: 2em 6fr 2em;
-  grid-template-areas: ". a .";
-  grid-auto-rows: 100%;
-`;
-
-const Content = styled.div`
-  grid-area: a;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 `;
 

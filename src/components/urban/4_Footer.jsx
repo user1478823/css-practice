@@ -13,12 +13,10 @@ class Footer extends Component {
   render() {
     return (
       <Section>
-        <Container>
-          <FontAwesomeIcon style={FaStyle} icon={faTwitter} />
-          <FontAwesomeIcon style={FaStyle2} icon={faFacebook} />
-          <FontAwesomeIcon style={FaStyle2} icon={faInstagram} />
-          <FontAwesomeIcon style={FaStyle2} icon={faSnapchat} />
-        </Container>
+        <FontAwesomeIcon style={FaStyle2} icon={faTwitter} />
+        <FontAwesomeIcon style={FaStyle} icon={faFacebook} />
+        <FontAwesomeIcon style={FaStyle} icon={faInstagram} />
+        <FontAwesomeIcon style={FaStyle} icon={faSnapchat} />
       </Section>
     );
   }
@@ -26,7 +24,7 @@ class Footer extends Component {
 
 export default Footer;
 
-const FaStyle = {
+const FaStyle2 = {
   fontSize: "20px",
   padding: "10px",
   borderStyle: "double",
@@ -36,7 +34,7 @@ const FaStyle = {
   borderRadius: "100%"
 };
 
-const FaStyle2 = {
+const FaStyle = {
   fontSize: "20px",
   marginLeft: "1em",
   padding: "10px",
@@ -49,13 +47,7 @@ const FaStyle2 = {
 const Section = styled.section`
   height: 150px;
   background-color: #3498db;
-  display: grid;
-  grid-template-columns: 2em 6fr 2em;
-  grid-template-areas: ". a .";
-  justify-items: center;
-`;
-
-const Container = styled.div`
-  grid-area: a;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

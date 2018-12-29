@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import Image from "./../../assets/pic01.jpg";
+import Image from "./../../assets/urban/pic01.jpg";
 
 export default class extends Component {
   state = {};
   render() {
     return (
       <Section>
-        <this.props.styles.img src={Image} alt="" />
-        <div>
+        <this.props.styles.img
+          style={{ gridArea: "image", marginBottom: "2.5em" }}
+          src={Image}
+          alt=""
+        />
+        <div style={{ gridArea: "text" }}>
           <this.props.styles.title>
             Maecenas a gravida quam
           </this.props.styles.title>
@@ -38,8 +42,20 @@ export default class extends Component {
 const Section = styled.section`
   background-color: #fafafa;
   padding: 2.5em;
-  @media screen and (min-width: 576px) {
+  @media (min-width: 576px) {
+    background-color: cyan;
+  }
+  @media (min-width: 768px) {
+    background-color: blue;
     display: grid;
-    grid-template-columns: 5fr 6fr 1em;
+    grid-template-columns: 1fr auto fit-content(37.5em) 1fr;
+    grid-template-areas: ". image text .";
+    grid-gap: 2em;
+  }
+  @media (min-width: 1280px) {
+    background-color: yellow;
+  }
+  @media (min-width: 1680px) {
+    background-color: green;
   }
 `;

@@ -21,9 +21,9 @@ class Urban extends Component {
     return (
       <React.Fragment>
         <Header />
-          <SectionOne styles={this.styles} />
-          <SectionTwo styles={this.styles} />
-          <SectionThree styles={this.styles} />
+        <SectionOne styles={this.styles} />
+        <SectionTwo styles={this.styles} />
+        <SectionThree styles={this.styles} />
         <Footer />
       </React.Fragment>
     );
@@ -39,17 +39,25 @@ export const Img = styled.img`
   margin-right: auto;
   height: auto;
   width: 50%;
-  @media screen and (min-width: 576px) {
-    width: 80%;
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+  @media (min-width: 1281px) {
+    width: 350px;
+  }
+  @media (min-width: 1680px) {
+    width: 400px;
   }
 `;
 
 export const Title = styled.p`
   font-weight: 900;
-  font-size: 1.2em;
-  padding-top: 1.5em;
-  @media screen and (min-width: 576px) {
-    padding-top: 0;
+  font-size: 1.2rem;
+  @media (min-width: 576px) {
+    font-size: 1.5rem;
+  }
+  @media only screen and (min-width: 1680px) {
+    font-size: 1.8rem;
   }
 `;
 
@@ -59,10 +67,18 @@ export const Body = styled.p`
   line-height: 1.5em;
   padding: 2.2em 0;
   color: #a5a5a5;
+  @media (min-width: 576px) {
+    width: 100%;
+    font-size: 1rem;
+  }
+  @media (min-width: 1680px) {
+    width: 56.25em;
+    font-size: 1.2rem;
+  }
 `;
 
 export const Button = styled.button`
-  width: 100px;
+  width: 6.25;
   padding: 0.7em;
   background-color: #3498db;
   color: white;
@@ -73,5 +89,12 @@ export const Button = styled.button`
     background-color: #003a58;
     color: #3498db;
     border-color: #003a58;
+  }
+  @media (min-width: 576px) {
+    width: 8rem;
+    font-size: 1rem;
+  }
+  @media only screen and (min-width: 1680px) {
+    font-size: 1.2rem;
   }
 `;

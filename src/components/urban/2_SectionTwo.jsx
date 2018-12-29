@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import Image from "./../../assets/pic02.jpg";
+import Image from "./../../assets/urban/pic02.jpg";
 
 export default class SectionTwo extends Component {
   state = {};
   render() {
     return (
       <Section>
-        <this.props.styles.img src={Image} alt="" style={{ gridArea: "a" }} />
-        <div style={{ gridArea: "b" }}>
+        <this.props.styles.img
+          src={Image}
+          alt=""
+          style={{ gridArea: "image", marginBottom: "2.5em" }}
+        />
+        <div style={{ gridArea: "text" }}>
           <this.props.styles.title style={{ color: "#f1f0f1" }}>
             Suspendisse quis massa vel justo
           </this.props.styles.title>
@@ -40,10 +44,11 @@ export default class SectionTwo extends Component {
 const Section = styled.section`
   background-color: #3498db;
   padding: 2.5em;
-  @media screen and (min-width: 576px) {
+  @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 1em 6fr 5fr;
-    grid-template-areas: ". b a";
+    grid-template-columns: 1fr fit-content(37.5em) auto 1fr;
+    grid-template-areas: ". text image .";
+    grid-gap: 2em;
   }
 `;
 
