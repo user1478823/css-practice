@@ -25,7 +25,6 @@ class Footer extends Component {
 export default Footer;
 
 const FaStyle2 = {
-  fontSize: "20px",
   padding: "10px",
   borderStyle: "double",
   borderWidth: "15px",
@@ -35,7 +34,6 @@ const FaStyle2 = {
 };
 
 const FaStyle = {
-  fontSize: "20px",
   marginLeft: "1em",
   padding: "10px",
   borderStyle: "double",
@@ -50,4 +48,11 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 20px;
+  @media (min-width: 768px) {
+    font-size: 25px;
+  }
+  @media (min-width: 1680px) {
+    font-size: 30px;
+  }
 `;

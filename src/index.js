@@ -6,6 +6,7 @@ import "./styles.css";
 import Home from "./components/Home";
 import About from "./components/About";
 import Urban from "./pages/Urban";
+import Transitive from "./pages/Transitive";
 import GridPractice from "./components/GridPractice";
 
 const Main = () => (
@@ -15,6 +16,7 @@ const Main = () => (
 			<Route path="/about" component={About} />
 			<Route path="/grid" component={GridPractice} />
 			<Route path="/urban" component={Urban} />
+			<Route path="/transitive" component={Transitive} />
 		</Switch>
 	</BrowserRouter>
 );
