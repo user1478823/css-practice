@@ -8,52 +8,36 @@ export default class SectionTwo extends Component {
   render() {
     return (
       <Section>
-        <Div>
+        <Content>
           <p id="title">TEMPUS FEUGIAT</p>
           <p id="body">
             Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna
             a ullamcorper laoreet, lectus arcu
           </p>
           <Button>LEARN MORE</Button>
-        </Div>
+        </Content>
         <Border>
-          <Div>
+          <Content>
             <p id="title">ALIQUAM NULLA</p>
             <p id="body">
               Ut convallis, sem sit amet interdum consectetuer, odio augue
               aliquam leo, nec dapibus tortor nibh sed
             </p>
             <Button>LEARN MORE</Button>
-          </Div>
+          </Content>
         </Border>
-        <Div>
+        <Content>
           <p id="title">SED MAGNA</p>
           <p id="body">
             Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam
             sit amet mi ullamcorper vehicula
           </p>
           <Button>LEARN MORE</Button>
-        </Div>
+        </Content>
       </Section>
     );
   }
 }
-
-const Div = styled.div`
-  padding: 2em 0;
-  #title {
-    color: #fff;
-    font-weight: 900;
-    font-size: 1.5em;
-  }
-  #body {
-    color: #9f9f97;
-    padding: 2em 0;
-  }
-  @media (min-width: 1000px) {
-    padding: 0 2em;
-  }
-`;
 
 const Section = styled.section`
   padding: 4em;
@@ -71,6 +55,22 @@ const Section = styled.section`
   @media (min-width: 1680px) {
     padding-top: 8em;
     padding-bottom: 8em;
+  }
+`;
+
+const Content = styled.div`
+  padding: 2em 0;
+  #title {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.5em;
+  }
+  #body {
+    color: #9f9f97;
+    padding: 2em 0;
+  }
+  @media (min-width: 1000px) {
+    padding: 0 2em;
   }
 `;
 

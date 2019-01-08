@@ -12,7 +12,7 @@ class SectionOne extends Component {
           <Img src={Image} alt="" />
           <div id="padding">
             <TitleDiv>
-              <p id="title">Lorem ipsum dolor</p>
+              <p id="title">LOREM IPSUM DOLOR</p>
               <p id="sub-title">
                 maecenas feugiat ex purus, quis volutpat lacus placerat
               </p>
