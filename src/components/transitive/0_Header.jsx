@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import MediaQuery from "react-responsive";
 
-import Video from "./../../assets/transitive/banner.ogv";
+import Video from "./../../assets/transitive/banner.mp4";
 import Image from "./../../assets/transitive/banner.jpg";
 
 export default () => (

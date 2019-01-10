@@ -1,60 +1,52 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import Image from "./../../assets/transitive/bg.jpg";
-
 export default class SectionTwo extends Component {
   state = {};
   render() {
     return (
-      <Section>
-        <Content>
-          <p id="title">TEMPUS FEUGIAT</p>
-          <p id="body">
-            Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna
-            a ullamcorper laoreet, lectus arcu
-          </p>
-          <Button>LEARN MORE</Button>
-        </Content>
-        <Border>
+      <this.props.bgSection>
+        <Grid>
           <Content>
-            <p id="title">ALIQUAM NULLA</p>
+            <p id="title">TEMPUS FEUGIAT</p>
             <p id="body">
-              Ut convallis, sem sit amet interdum consectetuer, odio augue
-              aliquam leo, nec dapibus tortor nibh sed
+              Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia,
+              magna a ullamcorper laoreet, lectus arcu
             </p>
             <Button>LEARN MORE</Button>
           </Content>
-        </Border>
-        <Content>
-          <p id="title">SED MAGNA</p>
-          <p id="body">
-            Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam
-            sit amet mi ullamcorper vehicula
-          </p>
-          <Button>LEARN MORE</Button>
-        </Content>
-      </Section>
+          <Border>
+            <Content>
+              <p id="title">ALIQUAM NULLA</p>
+              <p id="body">
+                Ut convallis, sem sit amet interdum consectetuer, odio augue
+                aliquam leo, nec dapibus tortor nibh sed
+              </p>
+              <Button>LEARN MORE</Button>
+            </Content>
+          </Border>
+          <Content>
+            <p id="title">SED MAGNA</p>
+            <p id="body">
+              Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a
+              diam sit amet mi ullamcorper vehicula
+            </p>
+            <Button>LEARN MORE</Button>
+          </Content>
+        </Grid>
+      </this.props.bgSection>
     );
   }
 }
 
-const Section = styled.section`
-  padding: 4em;
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(${Image});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+const Grid = styled.div`
   @media (min-width: 1000px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   @media (min-width: 1680px) {
-    padding-top: 8em;
-    padding-bottom: 8em;
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 `;
 
