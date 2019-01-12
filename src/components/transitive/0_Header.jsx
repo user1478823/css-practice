@@ -12,7 +12,7 @@ export default () => (
     </MediaQuery>
     <MediaQuery query="(min-width: 1280px)">
       <FullScreenVideoWrap>
-        <video src={Video} autoplay="true" loop="true" />
+        <video src={Video} autoPlay={true} loop={true} />
       </FullScreenVideoWrap>
       <HeaderOverlay />
       <Content />

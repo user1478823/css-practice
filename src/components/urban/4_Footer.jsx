@@ -27,7 +27,6 @@ export default Footer;
 const FaStyle2 = {
   padding: "10px",
   borderStyle: "double",
-  borderWidth: "15px",
   borderColor: "#000",
   borderWidth: "3px",
   borderRadius: "100%"

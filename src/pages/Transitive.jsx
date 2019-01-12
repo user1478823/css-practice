@@ -8,6 +8,7 @@ import SectionOne from "./../components/transitive/1_SectionOne";
 import SectionTwo from "./../components/transitive/2_SectionTwo";
 import SectionThree from "./../components/transitive/3_SectionThree";
 import SectionFour from "./../components/transitive/4_SectionFour";
+import Footer from "./../components/transitive/5_Footer";
 
 class Transitive extends Component {
   state = {};
@@ -15,10 +16,11 @@ class Transitive extends Component {
     return (
       <React.Fragment>
         <Header />
-        <SectionOne styles={Card} />
+        <SectionOne card={Card} />
         <SectionTwo bgSection={Section} />
-        <SectionThree styles={Card} />
+        <SectionThree card={Card} />
         <SectionFour bgSection={Section} />
+        <Footer titleDiv={TitleDiv} hr={Hr} />
       </React.Fragment>
     );
   }
@@ -55,24 +57,6 @@ export const Card = ({ content }) => {
     }
   `;
 
-  const TitleDiv = styled.div`
-    text-align: center;
-    #title {
-      font-weight: 900;
-      font-size: 2rem;
-      color: #000;
-    }
-    #sub-title {
-      font-size: 1.3rem;
-    }
-  `;
-
-  const Hr = styled.hr`
-    margin: 2em 0;
-    border: none; //remove default style
-    border-bottom: 1px solid #a6a6bf; //apply style
-  `;
-
   return (
     <Container id="container">
       {content.image}
@@ -87,3 +71,21 @@ export const Card = ({ content }) => {
     </Container>
   );
 };
+
+export const TitleDiv = styled.div`
+  text-align: center;
+  #title {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #000;
+  }
+  #sub-title {
+    font-size: 1.3rem;
+  }
+`;
+
+export const Hr = styled.hr`
+  margin: 2em 0;
+  border: none; //remove default style
+  border-bottom: 1px solid #a6a6bf; //apply style
+`;

@@ -9,7 +9,7 @@ class SectionThree extends Component {
   render() {
     return (
       <Section>
-        <this.props.styles
+        <this.props.card
           content={{
             gridArea: "a",
             image: <img src={Image01} alt="" />,
@@ -26,7 +26,7 @@ class SectionThree extends Component {
             )
           }}
         />
-        <this.props.styles
+        <this.props.card
           content={{
             gridArea: "b",
             image: <img src={Image02} alt="" />,

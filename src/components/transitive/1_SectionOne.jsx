@@ -8,7 +8,7 @@ class SectionOne extends Component {
   render() {
     return (
       <Section>
-        <this.props.styles
+        <this.props.card
           content={{
             gridArea: "a",
             image: <img src={Image} alt="" />,
