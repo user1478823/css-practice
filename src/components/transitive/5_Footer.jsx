@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import ArrowDown16 from "./../../assets/transitive/arrow-down-16.png";
+import ArrowDown20 from "./../../assets/transitive/arrow-down-20.png";
+import ArrowDown24 from "./../../assets/transitive/arrow-down-24.png";
+
 class Footer extends Component {
   state = {};
   render() {
@@ -16,22 +20,16 @@ class Footer extends Component {
               Name
             </label>
             <input
-              className="marginRight"
               style={{ gridColumn: "1 / 2", gridRow: "2" }}
               id="name"
               type="text"
               placeholder="Name"
             />
 
-            <label
-              className="marginLeft"
-              style={{ gridColumn: "2 / 3", gridRow: "1" }}
-              for="email"
-            >
+            <label style={{ gridColumn: "2 / 3", gridRow: "1" }} for="email">
               Email
             </label>
             <input
-              className="marginLeft"
               style={{ gridColumn: "2 / 3", gridRow: "2" }}
               id="email"
               type="text"
@@ -44,12 +42,17 @@ class Footer extends Component {
             >
               Department
             </label>
-            <input
+
+            <select
               style={{ gridColumn: "1 / 3", gridRow: "4" }}
               id="department"
-              type="text"
-              placeholder="- Category  -"
-            />
+            >
+              <option value="default">- Category -</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="shipping">Shipping</option>
+              <option value="administration">Administration</option>
+              <option value="human-resources">Human Resources</option>
+            </select>
 
             <label style={{ gridColumn: "1 / 3", gridRow: "5" }} for="message">
               Message
@@ -59,6 +62,7 @@ class Footer extends Component {
               name=""
               id="message"
               rows="7"
+              placeholder="Message"
             />
 
             <BtnDiv>
@@ -100,56 +104,86 @@ const Section = styled.section`
   @media (min-width: 1680px) {
     #container {
       padding: 8em 7em 5em 5em;
-      width: 87.5em;
+      width: 80em;
     }
 `;
 
 const Form = styled.form`
   label {
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: block;
     padding: 2em 0 1em 0;
   }
 
   input,
+  select,
   textarea {
+    font-size: 1rem;
     width: 100%;
-    padding: 0.5em;
+    padding: 0.5em 0;
     background-color: #f2f2f2;
     border: 1px solid #a6a6bf;
     border-radius: 5px;
+    text-indent: 10px;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Some browsers will not display the caret when using calc, so we put the fallback first */
+    background: url(${ArrowDown16}) #f2f2f2 no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+    background: url(${ArrowDown16}) #f2f2f2 no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
   }
 
   @media (min-width: 768px) {
     label {
-      font-size: 1.1rem;
       padding: 2.5em 0 1em 0;
     }
     input,
+    select,
     textarea {
-      padding: 0.75em;
+      padding: 0.75em 0;
     }
   }
   @media (min-width: 1000px) {
     label {
-      font-size: 1.2rem;
       padding: 3em 0 1em 0;
     }
     display: grid;
     column-gap: 4em;
     grid-template-columns: 1fr 1fr;
     input,
+    select,
     textarea {
-      padding: 0.85em;
+      spadding: 0.85em 0;
+    }
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      /* Some browsers will not display the caret when using calc, so we put the fallback first */
+      background: url(${ArrowDown20}) #f2f2f2 no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+      background: url(${ArrowDown20}) #f2f2f2 no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
     }
   }
   @media (min-width: 1680px) {
     label {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
     input,
+    select,
     textarea {
-      padding: 1em;
+      font-size: 1.1rem;
+      padding: 1em 0;
+    }
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      /* Some browsers will not display the caret when using calc, so we put the fallback first */
+      background: url(${ArrowDown24}) #f2f2f2 no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+      background: url(${ArrowDown24}) #f2f2f2 no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
     }
   }
 `;
