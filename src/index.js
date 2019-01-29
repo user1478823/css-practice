@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Urban from "./pages/Urban";
 import Transitive from "./pages/Transitive";
+import Retrospective from "./pages/Retrospective";
 import GridPractice from "./components/GridPractice";
 import ImageSlider from "./components/ImageSlider";
 
@@ -19,6 +20,7 @@ const Main = () => (
 			<Route path="/slider" component={ImageSlider} />
 			<Route path="/urban" component={Urban} />
 			<Route path="/transitive" component={Transitive} />
+			<Route path="/retrospective" component={Retrospective} />
 		</Switch>
 	</BrowserRouter>
 );
