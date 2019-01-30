@@ -19,13 +19,8 @@ export default class SectionThree extends Component {
           <Title>ALIQUAM BLANDIT MAURIS</Title>
           <Body>
             EUM EX EMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERAT SED AMET
-            ACCUMSAN
           </Body>
-          <Img
-            src={Image01}
-            style={{ gridArea: "img01", gridColumn: "" }}
-            alt=""
-          />
+          <Img src={Image01} style={{ gridArea: "img01" }} alt="" />
           <Img src={Image02} style={{ gridArea: "img02" }} alt="" />
           <Img src={Image03} style={{ gridArea: "img03" }} alt="" />
           <Img src={Image04} style={{ gridArea: "img04" }} alt="" />
@@ -33,6 +28,7 @@ export default class SectionThree extends Component {
           <Img src={Image06} style={{ gridArea: "img06" }} alt="" />
           <Img src={Image07} style={{ gridArea: "img07" }} alt="" />
           <Img src={Image08} style={{ gridArea: "img08" }} alt="" />
+          <Button>TEMPUS ALIQUAM</Button>
         </Content>
       </Section>
     );
@@ -51,13 +47,16 @@ const Section = styled.section`
 const Content = styled.div`
   margin: 1em;
   display: grid;
+  align-items: stretch;
+  align-content: center;	
   grid-template-areas:
     "title title"
-    "body body"
+    "body  body"
     "img01 img02"
     "img03 img04"
     "img05 img06"
     "img07 img08"
+    "btn   btn"
     ;
   @media (min-width: 576px) {
     margin 2em;
@@ -67,26 +66,23 @@ const Content = styled.div`
     margin: 0;
   }
   @media (min-width: 980px) {
-    width: 800px;
+    width: 900px;
     grid-template-areas:
       "title title title title"
-      "body body body body"
+      "body  body  body  body"
       "img01 img02 img03 img04"
       "img05 img06 img07 img08"
+      "btn   btn   btn   btn"
       ;
   }
   @media (min-width: 1280px) {
     width: 1200px;
   }
-  @media (min-width: 1680px) {
-  }
 `;
 
 export const Img = styled.img`
-  @media (max-width: 1280px) {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
 `;
 
 const Title = styled.p`
@@ -107,7 +103,7 @@ const Title = styled.p`
 `;
 
 const Body = styled.p`
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   grid-area: body;
   color: #838383;
   font-weight: 300;
@@ -123,16 +119,19 @@ const Body = styled.p`
 `;
 
 const Button = styled.button`
-  grid-area: button;
-  height: 45px;
-  width: 150px;
-  margin-left: 2em;
-  margin-bottom: 1em;
+  margin-top: 3em;
+  grid-area: btn;
+  justify-self: center;
+  width: 50%;
+  height: 55px;
   background-color: #fff;
   color: #51baa4;
   border: 2px solid #51baa4;
   border-radius: 30px;
   font-weight: 900;
   &:hover {
+  }
+  @media (min-width: 980px) {
+    width: 30%;
   }
 `;
