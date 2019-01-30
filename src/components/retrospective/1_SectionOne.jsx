@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Image from "./../../assets/retrospective/pic01.jpg";
 
-export default class SectionTwo extends Component {
+export default class SectionOne extends Component {
   state = {};
   render() {
     return (
