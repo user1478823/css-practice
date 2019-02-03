@@ -4,6 +4,7 @@ import SectionOne from "./../components/retrospective/1_SectionOne";
 import SectionTwo from "./../components/retrospective/2_SectionTwo";
 import SectionThree from "./../components/retrospective/3_SectionThree";
 import SectionFour from "./../components/retrospective/4_SectionFour";
+import Footer from "../components/retrospective/Footer/0_Footer";
 
 class Retrospective extends Component {
   state = {};
@@ -15,6 +16,7 @@ class Retrospective extends Component {
         <SectionTwo />
         <SectionThree />
         <SectionFour />
+        <Footer />
       </React.Fragment>
     );
   }

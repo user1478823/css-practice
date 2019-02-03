@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import Image from "./../../assets/retrospective/pic01.jpg";
 
+import { TealBorderBtn } from "./global/Global";
+
 export default class SectionOne extends Component {
   state = {};
   render() {
@@ -18,7 +20,7 @@ export default class SectionOne extends Component {
             luctus metus libero eu augue. Morbi purus libero, faucibus
             adipiscing, commodo quis, gravida id, est
           </Body>
-          <Button>MORE</Button>
+          <TealBorderBtn style={TealBorderBtnStyle}>MORE</TealBorderBtn>
         </Content>
       </Section>
     );
@@ -86,17 +88,10 @@ const Body = styled.p`
   padding: 1em 2em 0.8em 2em;
 `;
 
-const Button = styled.button`
-  grid-area: button;
-  height: 45px;
-  width: 150px;
-  margin-left: 2em;
-  margin-bottom: 1em;
-  background-color: #fff;
-  color: #51baa4;
-  border: 2px solid #51baa4;
-  border-radius: 30px;
-  font-weight: 900;
-  &:hover {
-  }
-`;
+const TealBorderBtnStyle = {
+  gridArea: "button",
+  height: "45px",
+  width: "150px",
+  marginLeft: "2em",
+  marginBottom: "1em"
+};

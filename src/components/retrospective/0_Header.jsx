@@ -3,12 +3,14 @@ import styled from "styled-components";
 
 import Image from "./../../assets/retrospective/banner.jpg";
 
+import { TealBtn } from "./global/Global.jsx";
+
 export default () => (
   <Header>
     <div>
       <Title>ETIAM ADIPISCING</Title>
       <Body>MAGNA FEUGIAT LOREM DOLOR EGESTAS</Body>
-      <Button>LEARN MORE</Button>
+      <TealBtn style={TealBtnStyle}>LEARN MORE</TealBtn>
     </div>
   </Header>
 );
@@ -51,18 +53,7 @@ const Body = styled.p`
   }
 `;
 
-const Button = styled.button`
-  padding: 1em 2em;
-  background-color: #51baa4;
-  color: white;
-  border-radius: 30px;
-  font-weight: 900;
-  font-size: 1rem;
-  &:hover {
-    background-color: #003a58;
-    color: #3498db;
-    border-color: #003a58;
-  }
-  @media screen and (min-width: 576px) {
-  }
-`;
+const TealBtnStyle = {
+  padding: "1em 2em",
+  fontSize: "1rem"
+};

@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import Image from "./../../assets/retrospective/pic11.jpg";
 
+import { WhiteBorderBtn } from "./global/Global.jsx";
+
 export default class SectionFour extends Component {
   state = {};
   render() {
@@ -13,7 +15,9 @@ export default class SectionFour extends Component {
           <Body>
             CONSECTETUR ADIPISICING ELIT LAUDANTIUM EXERCITATIONEM QUASI LABORUM
           </Body>
-          <Button>MAGNA FEUGIAT</Button>
+          <WhiteBorderBtn style={WhiteBorderBtnStyle}>
+            MAGNA FEUGIAT
+          </WhiteBorderBtn>
         </div>
       </Section>
     );
@@ -32,6 +36,20 @@ export const Section = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+
+  button {
+    @media (min-width: 768px) {
+      padding 1em 2.2em;
+      font-size: 1rem;
+    }
+    @media (min-width: 980px) {
+      font-size: 1.2rem;
+    }
+    @media (min-width: 1280px) {
+      padding: 1em 2.5em;
+      font-size: 1.3rem;
+    }
+  }
 `;
 
 const Title = styled.p`
@@ -67,24 +85,6 @@ const Body = styled.p`
   }
 `;
 
-const Button = styled.button`
-  padding 1em 2em;
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  border-radius: 50px;
-  font-weight: 900;
-  &:hover {
-  }
-  @media (min-width: 768px) {
-    padding 1em 2.2em;
-    font-size: 1rem;
-  }
-  @media (min-width: 980px) {
-    font-size: 1.2rem;
-  }
-  @media (min-width: 1280px) {
-    padding: 1em 2.5em;
-    font-size: 1.3rem;
-  }
-`;
+const WhiteBorderBtnStyle = {
+  padding: "1em 2em"
+};

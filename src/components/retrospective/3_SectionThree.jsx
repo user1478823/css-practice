@@ -10,6 +10,8 @@ import Image06 from "./../../assets/retrospective/pic08.jpg";
 import Image07 from "./../../assets/retrospective/pic09.jpg";
 import Image08 from "./../../assets/retrospective/pic10.jpg";
 
+import { TealBorderBtn } from "./global/Global.jsx";
+
 export default class SectionThree extends Component {
   state = {};
   render() {
@@ -28,7 +30,9 @@ export default class SectionThree extends Component {
           <Img src={Image06} style={{ gridArea: "img06" }} alt="" />
           <Img src={Image07} style={{ gridArea: "img07" }} alt="" />
           <Img src={Image08} style={{ gridArea: "img08" }} alt="" />
-          <Button>TEMPUS ALIQUAM</Button>
+          <TealBorderBtn style={TealBorderBtnStyle}>
+            TEMPUS ALIQUAM
+          </TealBorderBtn>
         </Content>
       </Section>
     );
@@ -74,6 +78,9 @@ const Content = styled.div`
       "img05 img06 img07 img08"
       "btn   btn   btn   btn"
       ;
+      button {
+        width: 30%;
+      }
   }
   @media (min-width: 1280px) {
     width: 1200px;
@@ -118,20 +125,10 @@ const Body = styled.p`
   }
 `;
 
-const Button = styled.button`
-  margin-top: 3em;
-  grid-area: btn;
-  justify-self: center;
-  width: 50%;
-  height: 55px;
-  background-color: #fff;
-  color: #51baa4;
-  border: 2px solid #51baa4;
-  border-radius: 30px;
-  font-weight: 900;
-  &:hover {
-  }
-  @media (min-width: 980px) {
-    width: 30%;
-  }
-`;
+const TealBorderBtnStyle = {
+  gridArea: "btn",
+  marginTop: "3em",
+  justifySelf: "center",
+  width: "50%",
+  height: "55px"
+};
