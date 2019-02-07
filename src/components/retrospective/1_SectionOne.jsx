@@ -23,11 +23,9 @@ export default class SectionOne extends Component {
 const Comp = (showComponent01, gridArea) => {
   return (
     <Content gridArea={gridArea}>
-      {showComponent01 ? (
-        <Img src={Image01} alt="" />
-      ) : (
-        <Img src={Image02} alt="" />
-      )}
+      {showComponent01 
+      ? <Img src={Image01} alt="" />
+      : <Img src={Image02} alt="" />}
       <Title>
         {showComponent01
           ? "INTEGER VITAE LIBERO ACRISUS EGESTAS PLACERAT SOLLICITUDIN"

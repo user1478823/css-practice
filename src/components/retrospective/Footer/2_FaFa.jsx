@@ -11,41 +11,26 @@ import {
 
 export default () => (
   <Section>
-    <FontAwesomeIcon style={FaStyle2} icon={faTwitter} />
-    <FontAwesomeIcon style={FaStyle} icon={faFacebook} />
-    <FontAwesomeIcon style={FaStyle} icon={faInstagram} />
-    <FontAwesomeIcon style={FaStyle} icon={faSnapchat} />
+    <FontAwesomeIcon icon={faTwitter} />
+    <FontAwesomeIcon icon={faFacebook} />
+    <FontAwesomeIcon icon={faInstagram} />
+    <FontAwesomeIcon icon={faSnapchat} />
   </Section>
 );
 
-const FaStyle2 = {
-  padding: "10px",
-  borderStyle: "double",
-  borderColor: "#000",
-  borderWidth: "3px",
-  borderRadius: "100%"
-};
-
-const FaStyle = {
-  marginLeft: "1em",
-  padding: "10px",
-  borderStyle: "double",
-  borderColor: "#000",
-  borderWidth: "3px",
-  borderRadius: "100%"
-};
-
 const Section = styled.section`
-  height: 150px;
-  background-color: #3498db;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  @media (min-width: 768px) {
-    font-size: 25px;
+  font-size: 30px;
+  * {
+    color: #a5a9ad;
+    margin: 1em;
+  }
+  @media (min-width: 980px) {
+    font-size: 35px;
   }
   @media (min-width: 1680px) {
-    font-size: 30px;
+    font-size: 40px;
   }
 `;
