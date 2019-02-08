@@ -1,7 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
-import { TealBtn, WhiteBorderBtn } from "./../global/Global.jsx";
+import {
+  TealBtnTemplate,
+  WhiteBorderBtnTemplate
+} from "./../global/Global.jsx";
 
 export default () => (
   <React.Fragment>
@@ -10,8 +13,8 @@ export default () => (
       <Name type="text" placeholder="Name" />
       <Email type="text" placeholder="Email" />
       <Message rows="7" placeholder="Message" />
-      <TealBtn style={ButtonStyle}>SUBMIT</TealBtn>
-      <WhiteBorderBtn style={ButtonStyle2}>RESET</WhiteBorderBtn>
+      <TealButton>SUBMIT</TealButton>
+      <WhiteBorderButton>RESET</WhiteBorderButton>
     </Form>
   </React.Fragment>
 );
@@ -85,16 +88,18 @@ const Message = styled.textarea`
   ${InputTextArea}
 `;
 
-const ButtonStyle = {
-  gridArea: "submit",
-  justifySelf: "right",
-  width: "50%",
-  height: "55px"
-};
+const TealButton = styled.button`
+  ${TealBtnTemplate}
+  grid-area: submit;
+  justify-self: right;
+  width: 50%;
+  height: 55px;
+`;
 
-const ButtonStyle2 = {
-  gridArea: "reset",
-  justifySelf: "left",
-  width: "50%",
-  height: "55px"
-};
+const WhiteBorderButton = styled.button`
+  ${WhiteBorderBtnTemplate}
+  grid-area: reset,
+  justify-self: left,
+  width: 50%,
+  height: 55px;
+`;

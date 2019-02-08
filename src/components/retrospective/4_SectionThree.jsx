@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Image from "./../../assets/retrospective/pic11.jpg";
 
-import { WhiteBorderBtn } from "./global/Global.jsx";
+import { WhiteBorderBtnTemplate } from "./global/Global.jsx";
 
 export default class SectionFour extends Component {
   state = {};
@@ -15,9 +15,7 @@ export default class SectionFour extends Component {
           <Body>
             CONSECTETUR ADIPISICING ELIT LAUDANTIUM EXERCITATIONEM QUASI LABORUM
           </Body>
-          <WhiteBorderBtn style={WhiteBorderBtnStyle}>
-            MAGNA FEUGIAT
-          </WhiteBorderBtn>
+          <WhiteBorderButton>MAGNA FEUGIAT</WhiteBorderButton>
         </div>
       </Section>
     );
@@ -85,6 +83,7 @@ const Body = styled.p`
   }
 `;
 
-const WhiteBorderBtnStyle = {
-  padding: "1em 2em"
-};
+const WhiteBorderButton = styled.button`
+  ${WhiteBorderBtnTemplate}
+  padding: 1em 2em;
+`;

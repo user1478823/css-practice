@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 import Image from "./../../assets/retrospective/banner.jpg";
 
-import { TealBtn } from "./global/Global.jsx";
+import { TealBtnTemplate } from "./global/Global.jsx";
 
 export default () => (
   <Header>
     <div>
       <Title>ETIAM ADIPISCING</Title>
       <Body>MAGNA FEUGIAT LOREM DOLOR EGESTAS</Body>
-      <TealBtn style={TealBtnStyle}>LEARN MORE</TealBtn>
+      <TealButton>LEARN MORE</TealButton>
     </div>
   </Header>
 );
@@ -53,7 +53,8 @@ const Body = styled.p`
   }
 `;
 
-const TealBtnStyle = {
-  padding: "1em 2em",
-  fontSize: "1rem"
-};
+const TealButton = styled.button`
+  ${TealBtnTemplate}
+  padding: 1em 2em;
+  font-size: 1rem;
+`;

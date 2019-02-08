@@ -10,7 +10,7 @@ import Image06 from "./../../assets/retrospective/pic08.jpg";
 import Image07 from "./../../assets/retrospective/pic09.jpg";
 import Image08 from "./../../assets/retrospective/pic10.jpg";
 
-import { TealBorderBtn } from "./global/Global.jsx";
+import { TealBorderBtnTemplate } from "./global/Global.jsx";
 
 export default class SectionThree extends Component {
   state = {};
@@ -30,9 +30,7 @@ export default class SectionThree extends Component {
           <Img src={Image06} style={{ gridArea: "img06" }} alt="" />
           <Img src={Image07} style={{ gridArea: "img07" }} alt="" />
           <Img src={Image08} style={{ gridArea: "img08" }} alt="" />
-          <TealBorderBtn style={TealBorderBtnStyle}>
-            TEMPUS ALIQUAM
-          </TealBorderBtn>
+          <TealBorderButton>TEMPUS ALIQUAM</TealBorderButton>
         </Content>
       </Section>
     );
@@ -125,10 +123,11 @@ const Body = styled.p`
   }
 `;
 
-const TealBorderBtnStyle = {
-  gridArea: "btn",
-  marginTop: "3em",
-  justifySelf: "center",
-  width: "50%",
-  height: "55px"
-};
+const TealBorderButton = styled.button`
+  ${TealBorderBtnTemplate}
+  grid-area: btn;
+  margin-top: 3em;
+  justify-self: center;
+  width: 50%;
+  height: 55px;
+`;

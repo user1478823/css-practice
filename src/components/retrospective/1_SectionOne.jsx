@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Image01 from "./../../assets/retrospective/pic01.jpg";
 import Image02 from "./../../assets/retrospective/pic02.jpg";
 
-import { TealBorderBtn } from "./global/Global";
+import { TealBorderBtnTemplate } from "./global/Global";
 
 export default class SectionOne extends Component {
   state = {};
@@ -23,9 +23,11 @@ export default class SectionOne extends Component {
 const Comp = (showComponent01, gridArea) => {
   return (
     <Content gridArea={gridArea}>
-      {showComponent01 
-      ? <Img src={Image01} alt="" />
-      : <Img src={Image02} alt="" />}
+      {showComponent01 ? (
+        <Img src={Image01} alt="" />
+      ) : (
+        <Img src={Image02} alt="" />
+      )}
       <Title>
         {showComponent01
           ? "INTEGER VITAE LIBERO ACRISUS EGESTAS PLACERAT SOLLICITUDIN"
@@ -36,7 +38,7 @@ const Comp = (showComponent01, gridArea) => {
           ? "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est"
           : "Mei ea accusam molestie, sonet ubique detracto ea qui. Corpora comnesque interesset eu sea. Eum ex omnes recteque. Ludus libris isque mea at, vocent hendrerit id."}
       </Body>
-      <TealBorderBtn style={TealBorderBtnStyle}>MORE</TealBorderBtn>
+      <TealBorderButton>MORE</TealBorderButton>
     </Content>
   );
 };
@@ -112,10 +114,11 @@ const Body = styled.p`
   padding: 1em 2em 0.8em 2em;
 `;
 
-const TealBorderBtnStyle = {
-  gridArea: "button",
-  height: "45px",
-  width: "150px",
-  marginLeft: "2em",
-  marginBottom: "1em"
-};
+const TealBorderButton = styled.button`
+  ${TealBorderBtnTemplate}
+  grid-area: button;
+  height: 45px;
+  width: 150px;
+  margin-left: 2em;
+  margin-bottom: 1em;
+`;
