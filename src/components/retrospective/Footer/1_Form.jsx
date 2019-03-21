@@ -33,6 +33,7 @@ const Form = styled.form`
   display: grid;
   width: 80vw;
   column-gap: 4em;
+  grid-gap: 2em;
   grid-template-areas:
     "name name name name"
     "email email email email"
@@ -58,7 +59,6 @@ const Form = styled.form`
 const InputTextArea = `
   font-size: 1rem;
   width: 100%;
-  margin: 1em 0;
   padding: 0.75em 0;
   background-color: #2f3440;
   border: 1px solid #2f3440;

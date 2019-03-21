@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Image01 from "./../../assets/retrospective/pic03.jpg";
@@ -12,30 +12,25 @@ import Image08 from "./../../assets/retrospective/pic10.jpg";
 
 import { TealBorderBtnTemplate } from "./global/Global.jsx";
 
-export default class SectionThree extends Component {
-  state = {};
-  render() {
-    return (
-      <Section>
-        <Content>
-          <Title>ALIQUAM BLANDIT MAURIS</Title>
-          <Body>
-            EUM EX EMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERAT SED AMET
-          </Body>
-          <Img src={Image01} style={{ gridArea: "img01" }} alt="" />
-          <Img src={Image02} style={{ gridArea: "img02" }} alt="" />
-          <Img src={Image03} style={{ gridArea: "img03" }} alt="" />
-          <Img src={Image04} style={{ gridArea: "img04" }} alt="" />
-          <Img src={Image05} style={{ gridArea: "img05" }} alt="" />
-          <Img src={Image06} style={{ gridArea: "img06" }} alt="" />
-          <Img src={Image07} style={{ gridArea: "img07" }} alt="" />
-          <Img src={Image08} style={{ gridArea: "img08" }} alt="" />
-          <TealBorderButton>TEMPUS ALIQUAM</TealBorderButton>
-        </Content>
-      </Section>
-    );
-  }
-}
+export default () => (
+  <Section>
+    <Content>
+      <Title>ALIQUAM BLANDIT MAURIS</Title>
+      <Body>
+        EUM EX EMPUS COMMODO TURPIS ADIPISCING TEMPOR PLACERAT SED AMET
+      </Body>
+      <Img src={Image01} style={{ gridArea: "img01" }} alt="" />
+      <Img src={Image02} style={{ gridArea: "img02" }} alt="" />
+      <Img src={Image03} style={{ gridArea: "img03" }} alt="" />
+      <Img src={Image04} style={{ gridArea: "img04" }} alt="" />
+      <Img src={Image05} style={{ gridArea: "img05" }} alt="" />
+      <Img src={Image06} style={{ gridArea: "img06" }} alt="" />
+      <Img src={Image07} style={{ gridArea: "img07" }} alt="" />
+      <Img src={Image08} style={{ gridArea: "img08" }} alt="" />
+      <TealBorderButton>TEMPUS ALIQUAM</TealBorderButton>
+    </Content>
+  </Section>
+);
 
 const Section = styled.section`
   text-align: center;

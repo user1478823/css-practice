@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Image01 from "./../../assets/retrospective/pic01.jpg";
@@ -6,19 +6,14 @@ import Image02 from "./../../assets/retrospective/pic02.jpg";
 
 import { TealBorderBtnTemplate } from "./global/Global";
 
-export default class SectionOne extends Component {
-  state = {};
-  render() {
-    return (
-      <Section>
-        <div>
-          {Comp(true, GridAreaImgLeft)}
-          {Comp(false, GridAreaImgRight)}
-        </div>
-      </Section>
-    );
-  }
-}
+export default () => (
+  <Section>
+    <div>
+      {Comp(true, GridAreaImgLeft)}
+      {Comp(false, GridAreaImgRight)}
+    </div>
+  </Section>
+);
 
 const Comp = (showComponent01, gridArea) => {
   return (

@@ -1,26 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Image from "./../../assets/retrospective/pic11.jpg";
 
 import { WhiteBorderBtnTemplate } from "./global/Global.jsx";
 
-export default class SectionFour extends Component {
-  state = {};
-  render() {
-    return (
-      <Section>
-        <div>
-          <Title>MAGNA SED CONSEQUAT TEMPUS</Title>
-          <Body>
-            CONSECTETUR ADIPISICING ELIT LAUDANTIUM EXERCITATIONEM QUASI LABORUM
-          </Body>
-          <WhiteBorderButton>MAGNA FEUGIAT</WhiteBorderButton>
-        </div>
-      </Section>
-    );
-  }
-}
+export default () => (
+  <Section>
+    <div>
+      <Title>MAGNA SED CONSEQUAT TEMPUS</Title>
+      <Body>
+        CONSECTETUR ADIPISICING ELIT LAUDANTIUM EXERCITATIONEM QUASI LABORUM
+      </Body>
+      <WhiteBorderButton>MAGNA FEUGIAT</WhiteBorderButton>
+    </div>
+  </Section>
+);
 
 export const Section = styled.section`
   display: flex;
