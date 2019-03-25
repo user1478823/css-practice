@@ -47,12 +47,17 @@ const AboveTitle = styled.p`
   letter-spacing: 0.2em;
   color: #a6a6a6;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   line-height: 1.5em;
   padding: 1em 2em 0.8em 2em;
+  @media (min-width: 768px) {
+    font-size: 0.8em;
+  }
   @media (min-width: 1280px) {
-    padding-top: 2em;
     font-size: 0.9rem;
+  }
+  @media (min-width: 1680px) {
+    font-size: 1rem;
   }
 `;
 
@@ -66,12 +71,15 @@ const Hr = styled.hr`
 
 const Title = styled.p`
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 0.5em 2em 0.8em 1.5em;
+  @media (min-width: 768px) {
+    font-size: 1.8rem;
+  }
   @media (min-width: 1280px) {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
   @media (min-width: 1680px) {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 `;
