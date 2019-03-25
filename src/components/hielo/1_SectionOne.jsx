@@ -39,7 +39,7 @@ const Comp = (showComponent01, gridArea) => {
 };
 
 const Section = styled.section`
-  padding: 2em 0 2em 0;
+  padding: 4em 0 4em 0;
   display: grid;
   grid-gap: 2em;
   justify-content: center;
@@ -114,7 +114,7 @@ const Title = styled.p`
   @media (min-width: 1280px) {
     font-size: 1.8rem;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1680px) {
     font-size: 2rem;
   }
 `;
