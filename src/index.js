@@ -10,6 +10,7 @@ import Urban from "./pages/Urban";
 import Transitive from "./pages/Transitive";
 import Retrospective from "./pages/Retrospective";
 import Hielo from "./pages/Hielo";
+import Snapshot from "./pages/Snapshot";
 
 import GridPractice from "./components/GridPractice";
 import ImageSlider from "./components/ImageSlider";
@@ -25,6 +26,7 @@ const Main = () => (
 			<Route path="/transitive" component={Transitive} />
 			<Route path="/retrospective" component={Retrospective} />
 			<Route path="/hielo" component={Hielo} />
+			<Route path="/snapshot" component={Snapshot} />
 		</Switch>
 	</BrowserRouter>
 );
