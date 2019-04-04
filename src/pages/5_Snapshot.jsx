@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Header from "./../components/snapshot/0_Header";
+import Header from "../components/snapshot/0_Header";
 
 class Snapshot extends Component {
   state = {};
