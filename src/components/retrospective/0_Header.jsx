@@ -7,11 +7,11 @@ import { TealBtnTemplate } from "./global/Global.jsx";
 
 export default () => (
   <Header>
-    <div>
+    <Container>
       <Title>ETIAM ADIPISCING</Title>
       <Body>MAGNA FEUGIAT LOREM DOLOR EGESTAS</Body>
       <TealButton>LEARN MORE</TealButton>
-    </div>
+    </Container>
   </Header>
 );
 
@@ -30,6 +30,13 @@ const Header = styled.header`
   @media (min-width: 768px) {
     height: 100vh;
   }
+`;
+
+const Container = styled.div`
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding 0 3em;
 `;
 
 const Title = styled.p`
