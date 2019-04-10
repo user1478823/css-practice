@@ -61,6 +61,7 @@ const Button = styled.button`
   border-color: rgba(255, 255, 255, 0.1);
   font-weight: 900;
   font-size: 1.5rem;
+  transition: 0.3s ease-in;
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
