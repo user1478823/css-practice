@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import Image01 from "./../../assets/snapshot/thumbs/11.jpg";
 import Image02 from "./../../assets/snapshot/thumbs/12.jpg";
@@ -22,7 +23,9 @@ export default () => (
       <Img src={Image06} style={{ gridArea: "img06" }} alt="" />
       <Img src={Image07} style={{ gridArea: "img07" }} alt="" />
       <Img src={Image08} style={{ gridArea: "img08" }} alt="" />
-      <Button>Full Gallery</Button>
+      <Link style={{ gridArea: "btn" }} to="/snap/gallery">
+        <Button>Full Gallery</Button>
+      </Link>
     </Content>
   </Section>
 );
@@ -90,7 +93,6 @@ const Title = styled.p`
 const Button = styled.button`
   margin-top: 2em;
   justify-self: center;
-  grid-area: btn;
   padding: 0.7em 1em;
   background-color: #3f9dff;
   color: white;

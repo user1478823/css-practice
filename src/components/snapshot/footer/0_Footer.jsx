@@ -18,7 +18,7 @@ class Footer extends Component {
 
 export default Footer;
 
-const Section = styled.section`
+const Section = styled.footer`
   background-color: #e5e5e5;
   @media (min-width: 1280px) {
     padding-right: 5em;
