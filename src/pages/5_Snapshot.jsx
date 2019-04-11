@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Header from "../components/snapshot/0_Header";
 import SectionOne from "../components/snapshot/1_SectionOne";
+import Footer from "../components/snapshot/footer/0_Footer";
 
 class Snapshot extends Component {
   state = {};
@@ -10,6 +11,7 @@ class Snapshot extends Component {
       <React.Fragment>
         <Header />
         <SectionOne />
+        <Footer />
       </React.Fragment>
     );
   }

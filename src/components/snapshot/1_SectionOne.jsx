@@ -92,13 +92,13 @@ const Button = styled.button`
   justify-self: center;
   grid-area: btn;
   padding: 0.7em 1em;
-  background-color: #19b5fe;
+  background-color: #3f9dff;
   color: white;
   font-weight: 900;
   font-size: 1.2rem;
   transition: 0.3s ease-in;
   &:hover {
-    background-color: #3f9dff;
+    background-color: #19b5fe;
   }
   @media (min-width: 576px) {
     padding: 0.7em 1.5em;
