@@ -6,7 +6,7 @@ export default class Home extends Component {
   render() {
     return (
       <Background>
-        <div>
+        <Div>
           <Button href="http://localhost:3000/urban">URBAN</Button>
           <Button href="http://localhost:3000/transitive">TRANSITIVE</Button>
           <Button href="http://localhost:3000/retrospective">
@@ -14,7 +14,10 @@ export default class Home extends Component {
           </Button>
           <Button href="http://localhost:3000/hielo">HIELO</Button>
           <Button href="http://localhost:3000/snapshot">SNAPSHOT</Button>
-        </div>
+          <Button href="http://localhost:3000/startbootstrap">
+            STARTBOOTSTRAP
+          </Button>
+        </Div>
       </Background>
     );
   }
@@ -31,6 +34,11 @@ const Background = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+const Div = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 `;
 
 const Button = styled.a`

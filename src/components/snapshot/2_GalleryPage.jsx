@@ -158,6 +158,7 @@ const Buttons = styled.div`
 `;
 
 const Button = styled.button`
+  z-index: 1;
   padding: 0.7em 1em;
   background-color: #3f9dff;
   color: white;

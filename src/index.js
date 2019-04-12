@@ -13,6 +13,7 @@ import Retrospective 			from "./pages/3_Retrospective";
 import Hielo 							from "./pages/4_Hielo";
 import Snapshot 					from "./pages/5_Snapshot";
 import SnapshotGallery		from "./components/snapshot/2_GalleryPage";
+import StartBootstrap 		from "./pages/6_StartBootstrap";
 
 import GridPractice 			from "./components/GridPractice";
 import ImageSlider 				from "./components/ImageSlider";
@@ -30,7 +31,7 @@ const Main = () => (
 			<Route path="/hielo" 					  component={Hielo} />
 			<Route path="/snapshot" 			  component={Snapshot} />
 			<Route path="/snap/gallery" 		component={SnapshotGallery} />
-
+			<Route path="/startbootstrap" 	component={StartBootstrap} />
 		</Switch>
 	</BrowserRouter>
 );

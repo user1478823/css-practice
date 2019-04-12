@@ -15,7 +15,8 @@ export default class extends Component {
         />
         <div style={{ gridArea: "text" }}>
           <this.props.styles.title>
-            Maecenas a gravida quam
+            Maecenas a gravida quam 576px-cyan 768px-blue 1280px-yellow
+            1680px-green
           </this.props.styles.title>
           <this.props.styles.body>
             Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada
