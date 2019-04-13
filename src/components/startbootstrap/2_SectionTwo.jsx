@@ -9,7 +9,7 @@ import {
   faHeart
 } from "@fortawesome/free-solid-svg-icons";
 
-import { PrimaryColor, Hr } from "./global/Global.jsx";
+import { PrimaryColor, Title, Hr } from "./global/Global.jsx";
 
 export default () => (
   <Section>
@@ -101,20 +101,6 @@ const Section = styled.section`
   }
   @media (min-width: 1680px) {
     grid-template-columns: repeat(4, 300px);
-  }
-`;
-
-const Title = styled.p`
-  font-weight: 900;
-  font-size: 2rem;
-  @media screen and (min-width: 768px) {
-    font-size: 2.1rem;
-  }
-  @media (min-width: 1280px) {
-    font-size: 2.3rem;
-  }
-  @media (min-width: 1680px) {
-    font-size: 2.4rem;
   }
 `;
 

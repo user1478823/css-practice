@@ -8,7 +8,7 @@ import Image04 from "./../../assets/startbootstrap/portfolio/thumbnails/4.jpg";
 import Image05 from "./../../assets/startbootstrap/portfolio/thumbnails/5.jpg";
 import Image06 from "./../../assets/startbootstrap/portfolio/thumbnails/6.jpg";
 
-import { Button } from "./global/Global.jsx";
+import { Title, Button } from "./global/Global.jsx";
 
 export default () => (
   <Section>
@@ -18,7 +18,14 @@ export default () => (
     <Img src={Image04} style={{ gridArea: "img04" }} alt="" />
     <Img src={Image05} style={{ gridArea: "img05" }} alt="" />
     <Img src={Image06} style={{ gridArea: "img06" }} alt="" />
-    <Title>Free Download at Start Bootstrap!</Title>
+    <Title
+      style={{
+        gridArea: "title",
+        padding: "1.5em 1em 1em 1em"
+      }}
+    >
+      Free Download at Start Bootstrap!
+    </Title>
     <Button
       style={{
         marginBottom: "4em",
@@ -78,24 +85,5 @@ export const Img = styled.img`
   height: auto;
   transition: transform 0.3s;
   &:hover {
-  }
-`;
-
-const Title = styled.p`
-  padding-top: 1.5em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  grid-area: title;
-  font-weight: 900;
-  font-size: 2rem;
-  @media screen and (min-width: 768px) {
-    font-size: 2.1rem;
-  }
-  @media (min-width: 1280px) {
-    font-size: 2.3rem;
-  }
-  @media (min-width: 1680px) {
-    font-size: 2.4rem;
   }
 `;
