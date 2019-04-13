@@ -1,50 +1,53 @@
 import React from "react";
 import styled from "styled-components";
 
-import { PrimaryColor, WhiteButton } from "./global/Global.jsx";
+import { PrimaryColor, Button, Hr } from "./global/Global.jsx";
 
 export default () => (
   <Section>
-    <Content>
-      <Title>We've got what you need!</Title>
-      <Hr />
-      <Body>
-        Start Bootstrap has everything you need to get your new website up and
-        running in no time! All of the templates and themes on Start Bootstrap
-        are open source, free to download, and easy to use. No strings attached
-      </Body>
-      <WhiteButton>GET STARTED!</WhiteButton>
-    </Content>
+    <Title>We've got what you need!</Title>
+    <Hr style={{ backgroundColor: "white", borderColor: "white" }} />
+    <Body>
+      Start Bootstrap has everything you need to get your new website up and
+      running in no time! All of the templates and themes on Start Bootstrap are
+      open source, free to download, and easy to use. No strings attached
+    </Body>
+    <Button
+      style={{
+        backgroundColor: "white",
+        color: "black",
+        borderColor: "white"
+      }}
+    >
+      GET STARTED!
+    </Button>
   </Section>
 );
 
 const Section = styled.section`
   text-align: center;
-  height: 50vh;
-  background-color: ${PrimaryColor};
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 4em 1em;
   color: white;
-`;
+  background-color: ${PrimaryColor};
 
-const Content = styled.div`
+  display: grid;
+  justify-content: center;
+
+  * {
+    justify-self: center;
+  }
+
   @media (min-width: 576px) {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: 500px;
   }
   @media (min-width: 768px) {
-    width: 600px;
+    grid-template-columns: 600px;
   }
   @media (min-width: 1280px) {
-    width: 800px;
+    grid-template-columns: 800px;
   }
   @media (min-width: 1680px) {
-    width: 900px;
+    grid-template-columns: 900px;
   }
 `;
 
@@ -60,18 +63,6 @@ const Title = styled.p`
   @media (min-width: 1680px) {
     font-size: 2.4rem;
   }
-`;
-
-const Hr = styled.hr`
-  width: 10%;
-  height: 2px;
-  background-color: white;
-  margin-left: 45% !important;
-  margin-right: 45% !important;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border: none; //remove default style
-  border-bottom: 1px solid white; //apply style
 `;
 
 const Body = styled.p`

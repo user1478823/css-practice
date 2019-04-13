@@ -3,19 +3,29 @@ import styled from "styled-components";
 
 import Image from "./../../assets/startbootstrap/header.jpg";
 
-import { PrimaryColor, OrangeButton } from "./global/Global.jsx";
+import { PrimaryColor, Button, Hr } from "./global/Global.jsx";
 
 export default () => (
   <Header>
     <Content>
       <Title>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</Title>
-      <Hr />
+      <Hr
+        style={{ backgroundColor: PrimaryColor, borderColor: PrimaryColor }}
+      />
       <Body>
         Start Bootstrap can help you build better websites using the Bootstrap
         CSS framework! Just download your template and start going, no strings
         attached!
       </Body>
-      <OrangeButton>FIND OUT MORE</OrangeButton>
+      <Button
+        style={{
+          backgroundColor: PrimaryColor,
+          color: "white",
+          borderColor: PrimaryColor
+        }}
+      >
+        FIND OUT MORE
+      </Button>
     </Content>
   </Header>
 );
@@ -23,6 +33,7 @@ export default () => (
 const Header = styled.header`
   text-align: center;
   height: 50vh;
+  color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(${Image});
   background-size: cover;
@@ -31,7 +42,6 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
 
   @media (min-width: 768px) {
     height: 100vh;
@@ -70,18 +80,6 @@ const Title = styled.p`
   @media (min-width: 1680px) {
     font-size: 3.2rem;
   }
-`;
-
-const Hr = styled.hr`
-  width: 10%;
-  height: 2px;
-  background-color: ${PrimaryColor};
-  margin-left: 45% !important;
-  margin-right: 45% !important;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border: none; //remove default style
-  border-bottom: 1px solid ${PrimaryColor}; //apply style
 `;
 
 const Body = styled.p`
