@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export default class Home extends Component {
   state = {};
@@ -7,15 +8,26 @@ export default class Home extends Component {
     return (
       <Background>
         <Div>
-          <Button href="http://localhost:3000/urban">URBAN</Button>
-          <Button href="http://localhost:3000/transitive">TRANSITIVE</Button>
-          <Button href="http://localhost:3000/retrospective">
-            RETROSPECTIVE
+          <Button>
+            <Link to="/urban">URBAN</Link>
           </Button>
-          <Button href="http://localhost:3000/hielo">HIELO</Button>
-          <Button href="http://localhost:3000/snapshot">SNAPSHOT</Button>
-          <Button href="http://localhost:3000/startbootstrap">
-            STARTBOOTSTRAP
+          <Button>
+            <Link to="/transitive">TRANSITIVE</Link>
+          </Button>
+          <Button>
+            <Link to="/retrospective">RETROSPECTIVE</Link>
+          </Button>
+          <Button>
+            <Link to="/hielo">HIELO</Link>
+          </Button>
+          <Button>
+            <Link to="/snapshot">SNAPSHOT</Link>
+          </Button>
+          <Button>
+            <Link to="/startbootstrap">STARTBOOTSTRAP</Link>
+          </Button>
+          <Button>
+            <Link to="/lattes">LATTES</Link>
           </Button>
         </Div>
       </Background>
@@ -41,7 +53,7 @@ const Div = styled.div`
   grid-template-columns: repeat(5, 1fr);
 `;
 
-const Button = styled.a`
+const Button = styled.button`
   color: #eee;
   text-decoration: none;
   margin: 1em;
@@ -54,5 +66,9 @@ const Button = styled.a`
     background-color: #003a58;
     color: #eee;
     border-color: #003a58;
+  }
+  a {
+    color: #eee;
+    text-decoration: none;
   }
 `;
