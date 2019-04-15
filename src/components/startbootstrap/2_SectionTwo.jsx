@@ -64,7 +64,7 @@ const Section = styled.section`
   text-align: center;
   padding: 4em 1em;
   color: black;
-
+  background-color: white; 
   * {
     justify-self: center;
   }

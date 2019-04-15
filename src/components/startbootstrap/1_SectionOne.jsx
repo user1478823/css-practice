@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { PrimaryColor, Title, Hr, Button } from "./global/Global.jsx";
 
 export default () => (
-  <Section>
+  <Section className="test">
     <Title>We've got what you need!</Title>
     <Hr style={{ backgroundColor: "white", borderColor: "white" }} />
     <Body>
