@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import { FontsMain } from "./../components/startbootstrap/global/Fonts";
+
 import Hamburger from "./../components/startbootstrap/00_Hamburger";
 import Header from "../components/startbootstrap/0_Header";
 import SectionOne from "../components/startbootstrap/1_SectionOne";
@@ -12,9 +14,9 @@ export default class StartBootstrap extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
+      <FontsMain>
         <Hamburger />
-        <OuterDiv >
+        <OuterDiv>
           <InnerDiv className="trigger">
             <Header />
             <SectionOne />
@@ -23,7 +25,7 @@ export default class StartBootstrap extends Component {
         </OuterDiv>
         <SectionThree />
         <Footer />
-      </React.Fragment>
+      </FontsMain>
     );
   }
 }

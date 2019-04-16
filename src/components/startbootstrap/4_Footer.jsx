@@ -8,7 +8,7 @@ import { PrimaryColor, Title, Hr } from "./global/Global.jsx";
 
 export default () => (
   <Footer>
-    <Title style={{ gridArea: "title" }}>Let's Get In Touch!</Title>
+    <h2 style={{ gridArea: "title" }}>Let's Get In Touch!</h2>
     <Hr
       style={{
         backgroundColor: PrimaryColor,
@@ -16,29 +16,44 @@ export default () => (
         gridArea: "hr"
       }}
     />
-    <Body style={{ gridArea: "body" }}>
+    <p style={{ gridArea: "body" }}>
       Ready to start your next project with us? That's great! Give us a call or
       send us an email and we will get back to you as soon as possible!
-    </Body>
+    </p>
     <FontAwesomeIcon
       className="fa"
       style={{ gridArea: "phone" }}
       icon={faPhone}
     />
-    <Body style={{ gridArea: "phone-title" }}>123-456-6789</Body>
+    <p style={{ gridArea: "phone-title" }}>123-456-6789</p>
     <FontAwesomeIcon
       className="fa"
       style={{ gridArea: "email" }}
       icon={faEnvelope}
     />
-    <Body style={{ gridArea: "email-title" }}>feedback@startbootstrap.com</Body>
+    <p style={{ gridArea: "email-title" }}>feedback@startbootstrap.com</p>
   </Footer>
 );
 
 const Footer = styled.footer`
   text-align: center;
-  padding: 4em 1em;
+  padding: 4em 2em;
   color: black;
+
+  display: grid;
+  justify-content: center;
+  grid-gap: 1em;
+
+  grid-template-areas:
+    "title"
+    "hr"
+    "body"
+    "phone"
+    "phone-title"
+    "phone-txt"
+    "email"
+    "email-title"
+    "email-txt";
 
   * {
     justify-self: center;
@@ -46,11 +61,12 @@ const Footer = styled.footer`
 
   .fa {
     font-size: 40px;
-    padding-bottom: 10px;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
     color: ${PrimaryColor};
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: 768px) {
     display: grid;
     justify-content: center;
     grid-gap: 1em;
@@ -65,27 +81,5 @@ const Footer = styled.footer`
   }
   @media (min-width: 1280px) {
     grid-template-columns: repeat(2, 400px);
-    grid-template-areas:
-      "title          title"
-      "hr             hr"
-      "body           body"
-      "phone          email"
-      "phone-title    email-title"
-      "phone-txt      email-txt";
-  }
-`;
-
-const Body = styled.p`
-  font-weight: 300;
-  font-size: 1.12rem;
-  line-height: 1.5em;
-  @media (max-width: 980px) {
-    padding-bottom: 1em;
-  }
-  @media (min-width: 1280px) {
-    font-size: 1.2rem;
-  }
-  @media (min-width: 1680px) {
-    font-size: 1.1rem;
   }
 `;

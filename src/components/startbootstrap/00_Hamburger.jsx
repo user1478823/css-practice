@@ -43,15 +43,15 @@ export default class Hamburger extends Component {
         <Ul>
           <Li className="menu-icon01">
             <FontAwesomeIcon className="menu-icon-style" icon={faHeart} />
-            <Body>Get Started!</Body>
+            <p>Get Started!</p>
           </Li>
           <Li className="menu-icon02">
             <FontAwesomeIcon className="menu-icon-style" icon={faPhone} />
-            <Body>123-456-6789</Body>
+            <p>123-456-6789</p>
           </Li>
           <Li className="menu-icon03">
             <FontAwesomeIcon className="menu-icon-style" icon={faEnvelope} />
-            <Body>feedback@startbootstrap.com</Body>
+            <p>feedback@startbootstrap.com</p>
           </Li>
         </Ul>
       </div>
@@ -62,7 +62,7 @@ export default class Hamburger extends Component {
 const Ul = styled.ul`
   position: absolute;
   bottom: 0;
-  left: 40px;
+  left: 30px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -71,6 +71,10 @@ const Ul = styled.ul`
   }
   li:nth-child(3) {
     margin-left: 80px;
+  }
+
+  p {
+    color: white;
   }
 
   .shazam {
@@ -91,18 +95,6 @@ const Li = styled.li`
   }
   transform: translateX(-500px);
   transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
-`;
-
-const Body = styled.p`
-  color: white;
-  font-weight: 300;
-  font-size: 1.12rem;
-  @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
-  }
-  @media (min-width: 1280px) {
-    font-size: 1.4rem;
-  }
 `;
 
 //div and not button because button shows blue indicator when clicked

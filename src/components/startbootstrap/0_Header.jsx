@@ -8,15 +8,15 @@ import { PrimaryColor, Button, Hr } from "./global/Global.jsx";
 export default () => (
   <Header>
     <Content>
-      <Title>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</Title>
+      <h1>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
       <Hr
         style={{ backgroundColor: PrimaryColor, borderColor: PrimaryColor }}
       />
-      <Body>
+      <h3>
         Start Bootstrap can help you build better websites using the Bootstrap
         CSS framework! Just download your template and start going, no strings
         attached!
-      </Body>
+      </h3>
       <Button
         style={{
           backgroundColor: PrimaryColor,
@@ -31,6 +31,10 @@ export default () => (
 );
 
 const Header = styled.header`
+  padding-top: 7em;
+  padding-bottom: 4em;
+  padding-right: 1em;
+  padding-left: 1em;
   text-align: center;
   height: 50vh;
   color: white;
@@ -45,6 +49,7 @@ const Header = styled.header`
 
   @media (min-width: 768px) {
     height: 100vh;
+    padding: 0;
   }
 `;
 
@@ -62,40 +67,5 @@ const Content = styled.div`
   }
   @media (min-width: 1680px) {
     width: 1000px;
-  }
-`;
-
-const Title = styled.p`
-  padding: 0 1em;
-  font-weight: 900;
-  font-size: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 768px) {
-    font-size: 2.5rem;
-  }
-  @media (min-width: 1280px) {
-    font-size: 3rem;
-  }
-  @media (min-width: 1680px) {
-    font-size: 3.2rem;
-  }
-`;
-
-const Body = styled.p`
-  font-weight: 300;
-  font-size: 1.12rem;
-  line-height: 1.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 2em;
-  @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
-  }
-  @media (min-width: 1280px) {
-    font-size: 1.4rem;
-  }
-  @media (min-width: 1680px) {
-    font-size: 1.6rem;
   }
 `;

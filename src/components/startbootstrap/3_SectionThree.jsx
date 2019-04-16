@@ -18,14 +18,14 @@ export default () => (
     <Img src={Image04} style={{ gridArea: "img04" }} alt="" />
     <Img src={Image05} style={{ gridArea: "img05" }} alt="" />
     <Img src={Image06} style={{ gridArea: "img06" }} alt="" />
-    <Title
+    <h2
       style={{
         gridArea: "title",
-        padding: "1.5em 1em 1em 1em"
+        paddingTop: "2em"
       }}
     >
       Free Download at Start Bootstrap!
-    </Title>
+    </h2>
     <Button
       style={{
         marginBottom: "4em",
