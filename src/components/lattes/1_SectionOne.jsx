@@ -89,6 +89,7 @@ const Section = styled.section`
     color: ${PrimaryColor};
   }
   @media (min-width: 768px) {
+    grid-column-gap: 5em;
     grid-template-columns: repeat(4, 125px);
   }
   @media (min-width: 980px) {
@@ -102,9 +103,6 @@ const Section = styled.section`
       "file        image        camera        meteor"
       "file-title  image-title  camera-title  meteor-title"
       "file-txt    image-txt    camera-txt    meteor-txt";
-  }
-  @media (min-width: 768px) {
-    grid-column-gap: 5em;
   }
   @media (min-width: 1680px) {
     grid-template-columns: repeat(4, 300px);
