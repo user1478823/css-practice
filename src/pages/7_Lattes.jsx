@@ -7,6 +7,7 @@ import SectionOne from "../components/lattes/1_SectionOne";
 import SectionTwo from "../components/lattes/2_SectionTwo";
 import SectionThree from "../components/lattes/3_SectionThree";
 import SectionFour from "../components/lattes/4_SectionFour";
+import SectionFive from "../components/lattes/5_SectionFive";
 import Footer from "../components/startbootstrap/4_Footer";
 
 export default class Lattes extends Component {
@@ -19,6 +20,7 @@ export default class Lattes extends Component {
         <SectionTwo />
         <SectionThree />
         <SectionFour />
+        <SectionFive />
       </FontsMain>
     );
   }
