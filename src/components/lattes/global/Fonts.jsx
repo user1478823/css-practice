@@ -4,18 +4,18 @@ export const FontsMain = styled.main`
   @import url("https://fonts.googleapis.com/css?family=Istok+Web|Dancing+Script|Rubik");
 
   * {
-    font-family: "Rubik", cursive;
+    font-family: "Rubik", sans-serif;
   }
   h1 {
     font-family: "Rubik", sans-serif;
     font-weight: 900;
     line-height: 1.4em;
-    font-size: 2rem;
+    font-size: 2.5rem;
     @media screen and (min-width: 768px) {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     @media (min-width: 1280px) {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
     @media (min-width: 1680px) {
       font-size: 4.5rem;
