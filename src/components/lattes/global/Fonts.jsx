@@ -55,6 +55,7 @@ export const FontsMain = styled.main`
     line-height: 1.5em;
   }
   p {
+    color: #797979;
     font-weight: 300;
     line-height: 1.5em;
     @media (max-width: 1680px) {

@@ -63,7 +63,7 @@ const Section = styled.section`
   text-align: center;
   padding: 4em 0;
   color: black;
-  background-color: white;
+  background-color: #f8f8f8;
 
   display: grid;
   justify-content: center;
