@@ -3,22 +3,14 @@ import styled from "styled-components";
 
 import Image from "./../../assets/lattes/bg-main.jpg";
 
-import { PrimaryColor, Hr } from "./../startbootstrap/global/Global";
+import { PrimaryColor } from "./global/Global.jsx";
 
 export default () => (
   <Header>
     <Content>
-      <Body>Welcome To Our Studio!</Body>
-      <Title>IT'S NICE TO MEET YOU</Title>
-      <Button
-        style={{
-          backgroundColor: PrimaryColor,
-          color: "white",
-          borderColor: PrimaryColor
-        }}
-      >
-        TELL ME MORE
-      </Button>
+      <h2>Welcome To Our Studio!</h2>
+      <h1>IT'S NICE TO MEET YOU</h1>
+      <Button>TELL ME MORE</Button>
     </Content>
   </Header>
 );
@@ -31,13 +23,19 @@ const Header = styled.header`
     url(${Image});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
+  h1 {
+    padding-top: 0.3em;
+    padding-bottom: 0.5em;
+  }
+
   @media (min-width: 768px) {
-    height: 100vh;
+    height: 80vh;
   }
 `;
 
@@ -58,47 +56,9 @@ const Content = styled.div`
   }
 `;
 
-const Title = styled.p`
-  padding: 0 1em;
-  font-weight: 900;
-  font-size: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 768px) {
-    font-size: 2.5rem;
-  }
-  @media (min-width: 1280px) {
-    font-size: 3rem;
-  }
-  @media (min-width: 1680px) {
-    font-size: 3.2rem;
-  }
-`;
-
-const Body = styled.p`
-  font-weight: 300;
-  font-size: 1.12rem;
-  line-height: 1.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 2em;
-  @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
-  }
-  @media (min-width: 1280px) {
-    font-size: 1.4rem;
-  }
-  @media (min-width: 1680px) {
-    font-size: 1.6rem;
-  }
-`;
-
 const Button = styled.button`
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 30px;
   font-weight: 900;
-  padding: 0.8em 1.8em;
-  width: 220px;
-  font-size: 1rem;
+  padding: 1.5em 2em;
+  color: white;
+  background-color: ${PrimaryColor};
 `;
