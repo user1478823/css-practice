@@ -38,7 +38,7 @@ const Section = styled.section`
   * {
     justify-self: center;
   }
-  
+
   grid-template-columns: repeat(7, 30px);
   grid-template-areas:
     "title    title    title    title    title    title    title"
@@ -72,7 +72,7 @@ const P = styled.p`
   padding-bottom: 2em;
 `;
 
-export const Img = styled.img`
+const Img = styled.img`
   width: 100%;
   height: auto;
 `;

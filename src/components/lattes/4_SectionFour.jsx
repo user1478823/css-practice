@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { BgColor } from "./global/Global.jsx";
+
 import Image01 from "./../../assets/lattes/portfolio-2.jpg";
 import Image02 from "./../../assets/lattes/portfolio-1.jpg";
 import Image03 from "./../../assets/lattes/portfolio-5.jpg";
@@ -29,7 +31,7 @@ const Section = styled.section`
   text-align: center;
   padding: 4em 0;
   color: black;
-  background-color: #f8f8f8;
+  background-color: ${BgColor};
 
   display: grid;
   justify-content: center;
@@ -89,7 +91,7 @@ const P = styled.p`
   }
 `;
 
-export const Img = styled.img`
+const Img = styled.img`
   width: 100%;
   height: auto;
 `;

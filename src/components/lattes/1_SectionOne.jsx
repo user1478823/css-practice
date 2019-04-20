@@ -9,7 +9,7 @@ import {
   faMeteor
 } from "@fortawesome/free-solid-svg-icons";
 
-import { PrimaryColor } from "./global/Global.jsx";
+import { PrimaryColor, BgColor } from "./global/Global.jsx";
 
 export default () => (
   <Section>
@@ -63,7 +63,7 @@ const Section = styled.section`
   text-align: center;
   padding: 4em 0;
   color: black;
-  background-color: #f8f8f8;
+  background-color: ${BgColor};
 
   display: grid;
   justify-content: center;
@@ -98,11 +98,11 @@ const Section = styled.section`
   @media (min-width: 1280px) {
     grid-template-columns: repeat(4, 250px);
     grid-template-areas:
-      "title          title        title       title"
-      "body           body         body        body"
-      "file        image        camera        meteor"
-      "file-title  image-title  camera-title  meteor-title"
-      "file-txt    image-txt    camera-txt    meteor-txt";
+      "title          title        title         title"
+      "body           body         body          body"
+      "file           image        camera        meteor"
+      "file-title     image-title  camera-title  meteor-title"
+      "file-txt       image-txt    camera-txt    meteor-txt";
   }
   @media (min-width: 1680px) {
     grid-template-columns: repeat(4, 300px);

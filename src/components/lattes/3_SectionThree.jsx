@@ -63,5 +63,5 @@ const H1 = styled.h1`
 `;
 
 const H3 = styled.h3`
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 `;
