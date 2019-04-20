@@ -29,6 +29,9 @@ export default class Home extends Component {
           <Button>
             <Link to="/lattes">LATTES</Link>
           </Button>
+          <Button>
+            <Link to="/zipper">ZIPPER</Link>
+          </Button>
         </Div>
       </Background>
     );

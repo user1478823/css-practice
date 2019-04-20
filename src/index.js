@@ -15,6 +15,7 @@ import Snapshot 					from "./pages/5_Snapshot";
 import SnapshotGallery		from "./components/snapshot/2_GalleryPage";
 import StartBootstrap 		from "./pages/6_StartBootstrap";
 import Lattes 						from "./pages/7_Lattes";
+import Zipper 						from "./pages/8_Zipper";
 
 import GridPractice 			from "./components/GridPractice";
 import ImageSlider 				from "./components/ImageSlider";
@@ -34,6 +35,7 @@ const Main = () => (
 			<Route path="/snap/gallery" 		component={SnapshotGallery} />
 			<Route path="/startbootstrap" 	component={StartBootstrap} />
 			<Route path="/lattes" 					component={Lattes} />
+			<Route path="/zipper" 					component={Zipper} />
 		</Switch>
 	</BrowserRouter>
 );
