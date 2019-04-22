@@ -12,7 +12,7 @@ import Transitive 				from "./pages/2_Transitive";
 import Retrospective 			from "./pages/3_Retrospective";
 import Hielo 							from "./pages/4_Hielo";
 import Snapshot 					from "./pages/5_Snapshot";
-import SnapshotGallery		from "./components/snapshot/2_GalleryPage";
+import SnapshotGallery		from "./components/5_snapshot/2_GalleryPage";
 import StartBootstrap 		from "./pages/6_StartBootstrap";
 import Lattes 						from "./pages/7_Lattes";
 import Zipper 						from "./pages/8_Zipper";

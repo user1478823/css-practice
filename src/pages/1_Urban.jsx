@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import Header from "./../components/urban/0_Header";
-import SectionOne from "./../components/urban/1_SectionOne";
-import SectionTwo from "./../components/urban/2_SectionTwo";
-import SectionThree from "./../components/urban/3_SectionThree";
-import Footer from "./../components/urban/4_Footer";
+import Header from "../components/1_urban/0_Header";
+import SectionOne from "../components/1_urban/1_SectionOne";
+import SectionTwo from "../components/1_urban/2_SectionTwo";
+import SectionThree from "../components/1_urban/3_SectionThree";
+import Footer from "../components/1_urban/4_Footer";
 
 class Urban extends Component {
   state = {};

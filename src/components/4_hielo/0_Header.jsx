@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Header } from "./../0_global/Global";
+import { Header } from "../0_global/Global";
 import Image from "./../../assets/hielo/slide01.jpg";
 
 export default () => (

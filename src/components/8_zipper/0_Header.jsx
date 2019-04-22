@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image from "./../../assets/zipper/image-01.jpg";
-import { Header } from "./../0_global/Global";
+import { Header } from "../0_global/Global";
 
 export default () => (
   <Header

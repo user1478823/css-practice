@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import Hamburger from "./../components/retrospective/00_Hamburger";
-import Header from "./../components/retrospective/0_Header";
-import SectionThree from "../components/retrospective/2_SectionTwo";
-import SectionFour from "../components/retrospective/3_SectionThree";
-import Footer from "../components/retrospective/Footer/0_Footer";
-
-import SectionOne from "../components/retrospective/1_SectionOne";
+import Hamburger from "./../components/3_retrospective/00_Hamburger";
+import Header from "./../components/3_retrospective/0_Header";
+import SectionOne from "../components/3_retrospective/1_SectionOne";
+import SectionTwo from "../components/3_retrospective/2_SectionTwo";
+import SectionThree from "../components/3_retrospective/3_SectionThree";
+import Footer from "../components/3_retrospective/Footer/0_Footer";
 
 class Retrospective extends Component {
   state = {};
@@ -15,8 +14,8 @@ class Retrospective extends Component {
         <Hamburger />
         <Header />
         <SectionOne />
+        <SectionTwo />
         <SectionThree />
-        <SectionFour />
         <Footer />
       </React.Fragment>
     );

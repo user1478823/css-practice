@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import Header from "./../components/hielo/0_Header";
-import SectionOne from "./../components/hielo/1_SectionOne";
-import SectionTwo from "./../components/hielo/2_SectionTwo";
-import SectionThree from "./../components/hielo/3_SectionThree";
-import Footer from "./../components/hielo/4_Footer";
+import Header from "../components/4_hielo/0_Header";
+import SectionOne from "../components/4_hielo/1_SectionOne";
+import SectionTwo from "../components/4_hielo/2_SectionTwo";
+import SectionThree from "../components/4_hielo/3_SectionThree";
+import Footer from "../components/4_hielo/4_Footer";
 
 class Hielo extends Component {
   state = {};

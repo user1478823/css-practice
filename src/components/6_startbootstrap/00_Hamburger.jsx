@@ -10,7 +10,7 @@ import {
   faHeart
 } from "@fortawesome/free-solid-svg-icons";
 
-import { PrimaryColor } from "./global/Global.jsx";
+import { PrimaryColor } from "./global/Global";
 
 export default class Hamburger extends Component {
   constructor(props, context) {

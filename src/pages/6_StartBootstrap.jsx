@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import { FontsMain } from "./../components/startbootstrap/global/Fonts";
+import { FontsMain } from "../components/6_startbootstrap/global/Fonts";
 
-import Hamburger from "./../components/startbootstrap/00_Hamburger";
-import Header from "../components/startbootstrap/0_Header";
-import SectionOne from "../components/startbootstrap/1_SectionOne";
-import SectionTwo from "../components/startbootstrap/2_SectionTwo";
-import SectionThree from "../components/startbootstrap/3_SectionThree";
-import Footer from "../components/startbootstrap/4_Footer";
+import Hamburger from "../components/6_startbootstrap/00_Hamburger";
+import Header from "../components/6_startbootstrap/0_Header";
+import SectionOne from "../components/6_startbootstrap/1_SectionOne";
+import SectionTwo from "../components/6_startbootstrap/2_SectionTwo";
+import SectionThree from "../components/6_startbootstrap/3_SectionThree";
+import Footer from "../components/6_startbootstrap/4_Footer";
 
 export default class StartBootstrap extends Component {
   state = {};
