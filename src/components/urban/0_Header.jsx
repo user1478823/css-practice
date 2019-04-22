@@ -1,10 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Header } from "./../0_global/Global";
 import Image from "./../../assets/urban/banner.jpg";
 
 export default () => (
-  <Header>
+  <Header
+    heightMobile="100vh"
+    theme={{
+      bg: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${Image})`
+    }}
+  >
     <div>
       <Title>This is Urban</Title>
       <Body>
@@ -15,20 +21,6 @@ export default () => (
     </div>
   </Header>
 );
-
-const Header = styled.header`
-  text-align: center;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(${Image});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-`;
 
 const Title = styled.p`
   font-weight: 900;

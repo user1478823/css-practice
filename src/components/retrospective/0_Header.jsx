@@ -1,36 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Header } from "./../0_global/Global";
 import Image from "./../../assets/retrospective/banner.jpg";
 
 import { TealBtnTemplate } from "./global/Global.jsx";
 
 export default () => (
-  <Header>
-    <Container>
-      <Title>ETIAM ADIPISCING</Title>
-      <Body>MAGNA FEUGIAT LOREM DOLOR EGESTAS</Body>
-      <TealButton>LEARN MORE</TealButton>
-    </Container>
+  <Header
+    heightMobile="100vh"
+    theme={{
+      bg: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${Image})`
+    }}
+  >
+    <Title>ETIAM ADIPISCING</Title>
+    <Body>MAGNA FEUGIAT LOREM DOLOR EGESTAS</Body>
+    <TealButton>LEARN MORE</TealButton>
   </Header>
 );
-
-const Header = styled.header`
-  text-align: center;
-  height: 50vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(${Image});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  @media (min-width: 768px) {
-    height: 100vh;
-  }
-`;
 
 const Container = styled.div`
   max-width: 960px;

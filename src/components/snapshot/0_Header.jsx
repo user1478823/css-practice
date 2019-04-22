@@ -1,31 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Header } from "./../0_global/Global";
 import Image from "./../../assets/snapshot/banner.jpg";
 
 export default () => (
-  <Header>
-    <div>
-      <Title>Hey, I'm Snapshot</Title>
-      <Body>A fully responsive gallery</Body>
-      <Button>Continue</Button>
-    </div>
-  </Header>
+  <HeaderFixedBgAtt
+    height="70vh"
+    theme={{
+      bg: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${Image})`
+    }}
+  >
+    <Title>Hey, I'm Snapshot</Title>
+    <Body>A fully responsive gallery</Body>
+    <Button>Continue</Button>
+  </HeaderFixedBgAtt>
 );
 
-const Header = styled.header`
-  text-align: center;
-  height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(${Image});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+const HeaderFixedBgAtt = styled(Header)`
   background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
 `;
 
 const Title = styled.p`

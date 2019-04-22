@@ -1,33 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Header } from "./../0_global/Global";
 import Image from "./../../assets/hielo/slide01.jpg";
 
 export default () => (
-  <Header>
-    <div>
-      <Title>ETIAM ADIPISCING</Title>
-      <Body>MAGNA FEUGIAT LOREM DOLOR EGESTAS</Body>
-    </div>
+  <Header
+    theme={{
+      bg: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${Image})`
+    }}
+  >
+    <Title>ETIAM ADIPISCING</Title>
+    <Body>MAGNA FEUGIAT LOREM DOLOR EGESTAS</Body>
   </Header>
 );
-
-const Header = styled.header`
-  text-align: center;
-  height: 50vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(${Image});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  @media (min-width: 768px) {
-    height: 100vh;
-  }
-`;
 
 const Title = styled.p`
   font-weight: 900;
@@ -49,5 +35,3 @@ const Body = styled.p`
     font-size: 1.5rem;
   }
 `;
-
-
