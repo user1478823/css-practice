@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { FontsMain } from "./../components/zipper/global/Fonts";
 
 import Header from "../components/zipper/0_Header";
-import SectionOne from "../components/lattes/1_SectionOne";
+import SectionOne from "../components/zipper/1_SectionOne";
 import SectionTwo from "../components/lattes/2_SectionTwo";
 import SectionThree from "../components/lattes/3_SectionThree";
 import SectionFour from "../components/lattes/4_SectionFour";
@@ -17,6 +17,7 @@ export default class Lattes extends Component {
     return (
       <FontsMain>
         <Header />
+        <SectionOne />
       </FontsMain>
     );
   }

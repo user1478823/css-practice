@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const FontsMain = styled.main`
-  @import url("https://fonts.googleapis.com/css?family=Comfortaa");
+  @import url("https://fonts.googleapis.com/css?family=Simonetta|Asar|Quicksand");
   * {
-    font-family: "Comfortaa", cursive;
+    font-family: "Quicksand", cursive;
   }
   h1 {
+    font-family: "Asar", cursive !important;
     font-weight: 900;
     line-height: 1.4em;
     font-size: 2rem;
@@ -20,6 +21,7 @@ export const FontsMain = styled.main`
     }
   }
   h2 {
+    font-family: "Simonetta", cursive !important;
     font-weight: 900;
     font-size: 2rem;
     @media screen and (min-width: 768px) {
@@ -34,16 +36,15 @@ export const FontsMain = styled.main`
   }
   h3 {
     font-weight: 300;
-    font-size: 1.25rem;
-    line-height: 1.4em;
+    font-size: 1.5rem;
     @media screen and (min-width: 768px) {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
     @media (min-width: 1280px) {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
     @media (min-width: 1680px) {
-      font-size: 1.6rem;
+      font-size: 1.9rem;
     }
   }
   h4 {
@@ -61,9 +62,7 @@ export const FontsMain = styled.main`
     }
   }
   p {
-    font-weight: 300;
-    line-height: 1.5em;
-    font-size: 1rem;
+    line-height: 1.8em;
     @media (min-width: 768px) {
       font-size: 1.1rem;
     }
