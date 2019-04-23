@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Image from "./../../assets/zipper/image-02.jpg";
+import Image from "./../../assets/zipper/image-03.jpg";
 
 import { PrimaryColor, BgColor } from "./global/Global.jsx";
 
@@ -10,15 +10,18 @@ export default () => (
     <Content>
       <H3>Mauris quis odio id sapien</H3>
       <p>
-        Aliquam sollicitudin mi sollicitudin justo viverra, nec posuere lorem
-        fringilla. Morbi quam arcu, dignissim ac rutrum vel, hendrerit feugiat
-        tortor. Ut vulputate eros non ante lobortis viverra.
+        Phasellus fringilla pharetra nunc sit amet fringilla. Vestibulum augue
+        turpis, molestie sit amet odio eget, ornare mattis nisl.
         <br />
         <br />
-        Vestibulum ut est lorem. Sed nec blandit lorem, eget iaculis quam.
-        Mauris quis odio id sapien scelerisque mollis. Maecenas aliquet luctus
-        erat sit amet aliquet. Vestibulum mattis porta tristique. Vivamus
-        suscipit bibendum lorem, at efficitur enim hendrerit nec.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; Integer ut justo arcu. Nullam a semper odio. Nam et
+        conque libero, et placerat est.
+        <br />
+        <br />
+        Integer consectetur hendrerit dolor, quis scelerisque risus mattis quis.
+        Pellentesque dapibus ornare nisl. Fusce facilisis pulvinar magna. Class
+        aptent taciti sociosqu.
       </p>
     </Content>
   </Section>
@@ -45,12 +48,12 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  right: 0;
+  left: 0;
   @media (min-width: 1280px) {
-    right: 10%;
+    left: 10%;
   }
   @media (min-width: 1680px) {
-    right: 20%;
+    left: 20%;
   }
 `;
 

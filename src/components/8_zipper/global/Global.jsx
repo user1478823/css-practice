@@ -1,3 +1,3 @@
-export const PrimaryColor = `#726fb9`;
+export const PrimaryColor = `#fdff73`;
 
-export const BgColor = `#f8f8f8`;
+export const BgColor = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))`;
