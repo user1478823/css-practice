@@ -32,6 +32,9 @@ export default class Home extends Component {
           <Button>
             <Link to="/zipper">ZIPPER</Link>
           </Button>
+          <Button>
+            <Link to="/comila">COMILA</Link>
+          </Button>
         </Div>
       </Background>
     );

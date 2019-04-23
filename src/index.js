@@ -16,6 +16,7 @@ import SnapshotGallery		from "./components/5_snapshot/2_GalleryPage";
 import StartBootstrap 		from "./pages/6_StartBootstrap";
 import Lattes 						from "./pages/7_Lattes";
 import Zipper 						from "./pages/8_Zipper";
+import Comila 						from "./pages/9_Comila";
 
 import GridPractice 			from "./components/GridPractice";
 import ImageSlider 				from "./components/ImageSlider";
@@ -36,6 +37,7 @@ const Main = () => (
 			<Route path="/startbootstrap" 	component={StartBootstrap} />
 			<Route path="/lattes" 					component={Lattes} />
 			<Route path="/zipper" 					component={Zipper} />
+			<Route path="/comila" 					component={Comila} />
 		</Switch>
 	</BrowserRouter>
 );
