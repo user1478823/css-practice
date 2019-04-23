@@ -27,13 +27,13 @@ export const FontsMain = styled.main`
     font-weight: 300;
     font-size: 2rem;
     @media screen and (min-width: 768px) {
-      font-size: 2.1rem;
-    }
-    @media (min-width: 1280px) {
       font-size: 2.3rem;
     }
+    @media (min-width: 1280px) {
+      font-size: 2.4rem;
+    }
     @media (min-width: 1680px) {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
   h3 {
