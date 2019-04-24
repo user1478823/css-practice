@@ -35,6 +35,9 @@ export default class Home extends Component {
           <Button>
             <Link to="/comila">COMILA</Link>
           </Button>
+          <Button>
+            <Link to="/touche">TOUCHE</Link>
+          </Button>
         </Div>
       </Background>
     );

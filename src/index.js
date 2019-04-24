@@ -17,6 +17,7 @@ import StartBootstrap 		from "./pages/6_StartBootstrap";
 import Lattes 						from "./pages/7_Lattes";
 import Zipper 						from "./pages/8_Zipper";
 import Comila 						from "./pages/9_Comila";
+import Touche 						from "./pages/10_Touche";
 
 import GridPractice 			from "./components/GridPractice";
 import ImageSlider 				from "./components/ImageSlider";
@@ -38,6 +39,7 @@ const Main = () => (
 			<Route path="/lattes" 					component={Lattes} />
 			<Route path="/zipper" 					component={Zipper} />
 			<Route path="/comila" 					component={Comila} />
+			<Route path="/touche" 					component={Touche} />
 		</Switch>
 	</BrowserRouter>
 );
