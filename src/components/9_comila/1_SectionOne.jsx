@@ -37,6 +37,28 @@ export default class Footer extends Component {
 }
 
 const Section = styled.section`
+  /**** Arrow Bottom Edge ****/
+  position: relative;
+  z-index: 1;
+  &:after,
+  &:before {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 150px;
+    background: white;
+    bottom: -6.5em;
+    z-index: -1;
+  }
+  &:before {
+    right: 50%;
+    transform: skew(0, 10deg);
+  }
+  &:after {
+    left: 50%;
+    transform: skew(0, -10deg);
+  }
+
   margin: 4em 0;
   display: grid;
   justify-content: center;
